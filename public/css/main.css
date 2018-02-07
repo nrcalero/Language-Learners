@@ -1,7 +1,13 @@
 /* Page Header */
 h1 {
-  padding-top: 33%;
   font-size:  6em;
+}
+
+/* Fix for weird view on desktop browsers */
+@media (max-width: 992px) {
+  h1 {
+    padding-top: 33%;
+  }
 }
 
 /* Info boxes and buttons */
@@ -13,6 +19,7 @@ p,span {
 /* Grid for home page, and interests page */
 .grid {
   height:  50%;
+  margin: 50px auto;
   display:  flex;
   flex-direction:  column;
   justify-content:  center;

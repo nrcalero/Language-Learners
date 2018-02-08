@@ -43,3 +43,39 @@ p,span {
 .bottom_row {
   margin-top:  30px;
 }
+
+.storystyle {
+  border-style: solid;
+  text-align:center;
+  height: 60%;
+   /* border-color: #117864;
+  background-color: #AED6F1;*/
+}
+
+.back-btn {
+  display: inline-block;
+  float:left;
+}
+
+.next-btn {
+    display: inline-block;
+
+  float:center;
+}
+
+.word-btn {
+    display: inline-block;
+
+  float:right;
+}
+
+.interests {
+  margin-top: 7%;
+  font-size: 3em;
+  border: 1px solid #ccc;
+  width: 268px;
+}
+
+.storytitle {
+  padding-left:5%;
+}

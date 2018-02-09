@@ -54,6 +54,9 @@ p,span {
   border-style: solid;
   text-align:center;
   height: 60%;
+  margin-left: 5%;
+  margin-top:2%;
+  margin-bottom:2%;
    /* border-color: #117864;
   background-color: #AED6F1;*/
 }
@@ -80,4 +83,25 @@ p,span {
 
 .storytitle {
   padding-left:5%;
+}
+
+@media (max-width:  767px) {
+.buttonoverlap {
+  font-size: 0.5em;
+}
+.titlemobile {
+  font-size: 2em;
+}
+
+.textmobile {
+  font-size: 1em;
+}
+
+.interests {
+  margin-top: 50%;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  width: 100px;
+}
+
 }

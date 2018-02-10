@@ -44,38 +44,16 @@ p,span {
   margin-top:  30px;
 }
 
-.storystyle {
+.story {
   border-style: solid;
-  text-align:center;
-  height: 60%;
+  text-align: center;
+  height: 50%;
    /* border-color: #117864;
   background-color: #AED6F1;*/
 }
 
-.back-btn {
-  display: inline-block;
-  float:left;
-}
-
-.next-btn {
-    display: inline-block;
-
-  float:center;
-}
-
-.word-btn {
-    display: inline-block;
-
-  float:right;
-}
-
-.interests {
-  margin-top: 7%;
-  font-size: 3em;
+#interests {
+  font-size: 2em;
   border: 1px solid #ccc;
-  width: 268px;
-}
-
-.storytitle {
-  padding-left:5%;
+  width: auto;
 }

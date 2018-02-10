@@ -25,6 +25,12 @@ p,span {
   justify-content:  center;
 }
 
+.grid2 {
+  display:  flex;
+  flex-direction:  column;
+  justify-content:  center;
+}
+
 /* Big Icon */
 .icon {
   font-size: 5em;
@@ -46,14 +52,68 @@ p,span {
 
 .story {
   border-style: solid;
+<<<<<<< HEAD
   text-align: center;
   height: 50%;
+=======
+  text-align:center;
+  height: 60%;
+  margin-left: 5%;
+  margin-top:2%;
+  margin-bottom:2%;
+>>>>>>> e40f300a5184bb737700aa56fc9140c6ba65712f
    /* border-color: #117864;
   background-color: #AED6F1;*/
 }
 
+<<<<<<< HEAD
 #interests {
+=======
+.back-btn {
+  font-size: 1em;
+}
+
+.next-btn {
+    font-size: 1em;
+
+}
+
+.word-btn {
+    font-size: 1em;
+}
+
+.interests {
+  margin-top: 20%;
+>>>>>>> e40f300a5184bb737700aa56fc9140c6ba65712f
   font-size: 2em;
   border: 1px solid #ccc;
   width: auto;
 }
+<<<<<<< HEAD
+=======
+
+.storytitle {
+  padding-left:5%;
+}
+
+@media (max-width:  767px) {
+.buttonoverlap {
+  font-size: 0.5em;
+}
+.titlemobile {
+  font-size: 2em;
+}
+
+.textmobile {
+  font-size: 1em;
+}
+
+.interests {
+  margin-top: 50%;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  width: 100px;
+}
+
+}
+>>>>>>> e40f300a5184bb737700aa56fc9140c6ba65712f

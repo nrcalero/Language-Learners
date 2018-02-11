@@ -1,0 +1,34 @@
+{
+	"Interests": [
+		{
+			"name": "Sports",
+			"imageURL": "fa fa-futbol-o",
+			"enabled": false 
+		},
+		{
+			"name": "Food & Drink",
+			"imageURL": "fa fa-coffee",
+			"enabled": false 
+		},
+		{
+			"name": "News",
+			"imageURL": "fa fa-newspaper-o",
+			"enabled": false 
+		},
+		{
+			"name": "Music",
+			"imageURL": "fa fa-music",
+			"enabled": false 
+		},
+		{
+			"name": "Health & Fitness",
+			"imageURL": "fa fa-heartbeat",
+			"enabled": false 
+		},
+		{
+			"name": "Technology",
+			"imageURL": "fa fa-laptop",
+			"enabled": false 
+		}
+	]
+}

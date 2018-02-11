@@ -2,6 +2,11 @@
 <head>
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/interests.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="js/jquery-1.11.0.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/interests.js"></script>
 	<title>Language Learners</title>
 </head>
 <body>
@@ -9,39 +14,89 @@
 		<h1>
 			Interests
 		</h1>
+
     <p>
       This is where users would edit storyboard topic preferences.
     </p>
 		<div class="container-fluid text-center grid">
-			<div class="row top_row">
+			<div class="row">
+				{{#each Interests}}
 				<div class="col-xs-4">
-					<span class="icon glyphicon glyphicon-road"></span>
-					<p>slider</p>
+					<i class="{{imageURL}}" style="font-size: 6em;"></i>
+					<p> {{name}} </p>
+					<label class="switch">
+ 					 	<input type="checkbox" id="sports">
+  						<span class="slider round"></span>
+					</label>
 				</div>
+				{{/each}}
+				<!--
 				<div class="col-xs-4">
 					<span class="icon glyphicon glyphicon-music"></span>
-					<p>slider</p>
+					<p>Food & Drink</p>
 				</div>
 				<div class="col-xs-4">
 					<span class="icon glyphicon glyphicon-cutlery"></span>
-					<p>slider</p>
+					<p>News</p>
 				</div>
 			</div>
+			<div class="row midtoggle"> 
+				<div class="col-xs-4">
+					<label class="switch">
+ 					 	<input type="checkbox" id="sports">
+  						<span class="slider round"></span>
+					</label>
+				</div>
+				<div class="col-xs-4"> 
+					<label class="switch">
+ 					 	<input type="checkbox" id="fooddrink">
+  						<span class="slider round"></span>
+					</label>
+				</div>
+				<div class="col-xs-4"> 
+					<label class="switch">
+ 					 	<input type="checkbox" id="news">
+  						<span class="slider round"></span>
+					</label>
+				</div>
+			</div>
+
 			<div class="row bottom_row">
 				<div class="col-xs-4">
 					<span class="icon glyphicon glyphicon-search"></span>
-					<p>slider</p>
+					<p>Music</p>
 				</div>
 				<div class="col-xs-4">
 					<span class="icon glyphicon glyphicon-pencil"></span>
-					<p>slider</p>
+					<p>Health & Fitness</p>
 				</div>
 				<div class="col-xs-4">
 					<span class="icon glyphicon glyphicon-flag"></span>
-					<p>slider</p>
+					<p>Technology</p>
+				</div>
+			</div>
+			<div class="row"> 
+				<div class="col-xs-4"> 
+					<label class="switch">
+ 					 	<input type="checkbox" id="music">
+  						<span class="slider round" ></span>
+					</label>
+				</div>
+				<div class="col-xs-4"> 
+					<label class="switch">
+ 					 	<input type="checkbox" id="healthfitness">
+  						<span class="slider round" ></span>
+					</label>
+				</div>
+				<div class="col-xs-4"> 
+					<label class="switch">
+ 					 	<input type="checkbox" id="technology">
+  						<span class="slider round" ></span>
+					</label>
 				</div>
 			</div>
 		</div>
+	-->
 		<a type="button" class="btn btn-link btn-lg" href="/">
 			<span class="glyphicon glyphicon-chevron-left"></span>
 			<span>Back</span>

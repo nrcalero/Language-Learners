@@ -6,8 +6,10 @@ function init() {
 $(document).ready(function () {
   initializePage();
   $('.switch :checkbox').on("change", function () {
-    alert("The checkbox with the ID " + this.id + " changed.");
-    var object = JSON.parse('Interests.json');
+    var something = $.getJSON("interestsdata", function () {
+    console.log("Hip hip horray!");
+    });
+
   });
 });
 

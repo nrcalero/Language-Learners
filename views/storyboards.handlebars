@@ -1,60 +1,61 @@
 <html>
-<head>
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/main.css">
-	<script src="js/jquery-1.11.0.js"></script>
-	<script src="js/bootstrap.js"></script>
-	<script src="js/storyboards.js"></script>
+	<head>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/main.css">
+		<script src="js/jquery-1.11.0.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/storyboards.js"></script>
 
-	<title>Language Learners</title>
-</head>
-<body>
-	<div class="container">
-		<h1>
-			Stories
-		</h1>
-		<p>
-			Engage with stories to learn your language in context.
-		</p>
+		<title>Language Learners</title>
+	</head>
+	<body>
 		<div class="container">
-			<div class="row">
-				<div class="col-xs-6">
-					<p><strong>Story:</strong></p>
+			<h1>
+				Stories
+			</h1>
+			<p>
+				Engage with stories to learn your language in context.
+			</p>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6">
+						<p><strong>Story:</strong></p>
+					</div>
+					<div class="col-xs-6">
+						<select id="interests" onchange="changeInterest()">
+							<option value="News">News</option>
+							<option value="Food">Food</option>
+							<option value="Sports">Sports</option>
+							<option value="Exercise">Exercise</option>
+						</select>
+					</div>
 				</div>
-				<div class="col-xs-6">
-					<select id="interests" onchange="changeInterest()">
-						<option value="News">News</option>
-						<option value="Food">Food</option>
-						<option value="Sports">Sports</option>
-						<option value="Exercise">Exercise</option>
-					</select>
+				<div class="row">
+					<div class="container story">
+						<p> This is where the text will go. The text will consist of a story that relates to the topic of interest chosen above.</p>
+					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="container story">
-					<p> This is where the text will go. The text will consist of a story that relates to the topic of interest chosen above.</p>
+				<div class="row text-center">
+					<div class="col-xs-4">
+						<a type="button" class="btn btn-link btn-lg" href="/">
+							<span class="glyphicon glyphicon-chevron-left"></span>
+							<span>Back</span>
+						</a>
+					</div>
+					<div class="col-xs-4">
+						<a id="next" type="button" class="btn btn-link btn-lg" href="#">
+							<span class="glyphicon glyphicon-book"></span>
+							<span>Next Story</span>
+						</a>
+					</div>
+					<div id="words" class="col-xs-4">
+						<a type="button" class="btn btn-link btn-lg" href="#">
+							<span class="glyphicon glyphicon-list-alt"></span>
+							<span>Word List</span>
+						</a>
+					</div>
 				</div>
-			</div>
-			<div class="row text-center">
-				<div class="col-xs-4">
-				<a type="button" class="btn btn-link btn-lg" href="/">
-					<span class="glyphicon glyphicon-chevron-left"></span>
-					<span>Back</span>
-				</a>
-			</div>
-			<div class="col-xs-4">
-				<a id="next" type="button" class="btn btn-link btn-lg" href="#">
-					<span class="glyphicon glyphicon-book"></span>
-					<span>Next Story</span>
-				</a>
-			</div>
-			<div id="words" class="col-xs-4">
-				<a type="button" class="btn btn-link btn-lg" href="#">
-					<span class="glyphicon glyphicon-list-alt"></span>
-					<span>Word List</span>
-				</a>
 			</div>
 		</div>
-	</div>
-</body>
+	</body>
 </html>

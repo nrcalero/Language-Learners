@@ -13,6 +13,7 @@ var interests = require('./routes/interests');
 var storyboards = require('./routes/storyboards');
 var words = require('./routes/words');
 var difficulty = require('./routes/difficulty');
+var login = require('./routes/login');
 
 // Example route
 // var user = require('./routes/user');
@@ -44,6 +45,7 @@ app.get('/interests', interests.view);
 app.get('/storyboards', storyboards.view);
 app.get('/words', words.view);
 app.get('/difficulty', difficulty.view);
+app.get('/login', login.view);
 
 // Example route
 // app.get('/users', user.list);

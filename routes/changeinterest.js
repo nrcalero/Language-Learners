@@ -33,6 +33,6 @@ exports.changeInterests = function (req,res) {
 	var json = JSON.stringify(data, null, 2);
 	fs.writeFile('Interests.json', json);
 
-	res.render('interests', data);
+	res.render('index', data);
 
 }

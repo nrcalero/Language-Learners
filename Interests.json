@@ -9,19 +9,19 @@
     {
       "name": "Food & Drink",
       "icon": "fa fa-coffee",
-      "enabled": null,
+      "enabled": "checked",
       "id": "fooddrink"
     },
     {
       "name": "News",
       "icon": "fa fa-newspaper-o",
-      "enabled": null,
+      "enabled": "checked",
       "id": "news"
     },
     {
       "name": "Music",
       "icon": "fa fa-music",
-      "enabled": "checked",
+      "enabled": null,
       "id": "music"
     },
     {

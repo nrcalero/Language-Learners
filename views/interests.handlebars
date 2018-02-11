@@ -18,88 +18,33 @@
       This is where users would edit storyboard topic preferences.
     </p>
 		<div class="container-fluid text-center grid">
-			<div class="row">
-				{{#each Interests}}
-				<div class="col-xs-4">
-					<i class="{{icon}}" style="font-size: 6em;"></i>
-					<p> {{name}} </p>
-					<label class="switch">
- 					 	<input type="checkbox" id="{{name}}" {{enabled}}>
-  					<span class="slider round"></span>
-					</label>
+			<div class="row topmargin">
+				<form id="changeInterestForm" role="form" method="get" action="/changeinterest">
+					{{#each Interests}}
+					<div class="col-xs-4 form-group">
+						<i class="{{icon}}" style="font-size: 6em;"></i>
+						<p> {{name}} </p>
+						<label class="switch" for="{{id}}">
+ 					 		<input type="checkbox" id="{{id}}" class="form-control" name="{{id}}" {{enabled}}>
+  							<span class="slider round"></span>
+						</label>
+					</div>
+					{{/each}}
 				</div>
-				{{/each}}
-				<!--
-				<div class="col-xs-4">
-					<span class="icon glyphicon glyphicon-music"></span>
-					<p>Food & Drink</p>
-				</div>
-				<div class="col-xs-4">
-					<span class="icon glyphicon glyphicon-cutlery"></span>
-					<p>News</p>
-				</div>
+				<div class="row">
+					<div class="col-xs-6 backbtn">
+					<a type="button" class="btn btn-link btn-lg" href="/index">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+					<span>Back</span>
+				</a>
 			</div>
-			<div class="row midtoggle">
-				<div class="col-xs-4">
-					<label class="switch">
- 					 	<input type="checkbox" id="sports">
-  						<span class="slider round"></span>
-					</label>
-				</div>
-				<div class="col-xs-4">
-					<label class="switch">
- 					 	<input type="checkbox" id="fooddrink">
-  						<span class="slider round"></span>
-					</label>
-				</div>
-				<div class="col-xs-4">
-					<label class="switch">
- 					 	<input type="checkbox" id="news">
-  						<span class="slider round"></span>
-					</label>
-				</div>
+			<div class="col-xs-6">
+		<i class="fa fa-check-square lower" aria-hidden="true" style="font-size: 3em;"></i>
+		<input type="submit" id="submitBtn" class="btn btn-link btn-lg submitbtn" value="Confirm Interests"> 
+			 </form>
 			</div>
+	</div>
 
-			<div class="row bottom_row">
-				<div class="col-xs-4">
-					<span class="icon glyphicon glyphicon-search"></span>
-					<p>Music</p>
-				</div>
-				<div class="col-xs-4">
-					<span class="icon glyphicon glyphicon-pencil"></span>
-					<p>Health & Fitness</p>
-				</div>
-				<div class="col-xs-4">
-					<span class="icon glyphicon glyphicon-flag"></span>
-					<p>Technology</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-4">
-					<label class="switch">
- 					 	<input type="checkbox" id="music">
-  						<span class="slider round" ></span>
-					</label>
-				</div>
-				<div class="col-xs-4">
-					<label class="switch">
- 					 	<input type="checkbox" id="healthfitness">
-  						<span class="slider round" ></span>
-					</label>
-				</div>
-				<div class="col-xs-4">
-					<label class="switch">
- 					 	<input type="checkbox" id="technology">
-  						<span class="slider round" ></span>
-					</label>
-				</div>
-			</div>
-		</div>
-	-->
-		<a type="button" class="btn btn-link btn-lg" href="/index">
-			<span class="glyphicon glyphicon-chevron-left"></span>
-			<span>Back</span>
-		</a>
 	</div>
 </body>
 </html>

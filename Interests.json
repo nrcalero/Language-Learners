@@ -1,35 +1,40 @@
 {
-	"Interests": [
-		{
-			"name": "Sports",
-			"icon": "fa fa-futbol-o",
-			"enabled": "checked"
-
-		},
-		{
-			"name": "Food & Drink",
-			"icon": "fa fa-coffee",
-			"enabled": "checked"
-		},
-		{
-			"name": "News",
-			"icon": "fa fa-newspaper-o",
-			"enabled": null
-		},
-		{
-			"name": "Music",
-			"icon": "fa fa-music",
-			"enabled": null
-		},
-		{
-			"name": "Health & Fitness",
-			"icon": "fa fa-heartbeat",
-			"enabled": null
-		},
-		{
-			"name": "Technology",
-			"icon": "fa fa-laptop",
-			"enabled": null
-		}
-	]
+  "Interests": [
+    {
+      "name": "Sports",
+      "icon": "fa fa-futbol-o",
+      "enabled": "checked",
+      "id": "sports"
+    },
+    {
+      "name": "Food & Drink",
+      "icon": "fa fa-coffee",
+      "enabled": null,
+      "id": "fooddrink"
+    },
+    {
+      "name": "News",
+      "icon": "fa fa-newspaper-o",
+      "enabled": null,
+      "id": "news"
+    },
+    {
+      "name": "Music",
+      "icon": "fa fa-music",
+      "enabled": "checked",
+      "id": "music"
+    },
+    {
+      "name": "Health & Fitness",
+      "icon": "fa fa-heartbeat",
+      "enabled": "checked",
+      "id": "healthfitness"
+    },
+    {
+      "name": "Technology",
+      "icon": "fa fa-laptop",
+      "enabled": null,
+      "id": "technology"
+    }
+  ]
 }

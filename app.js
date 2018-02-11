@@ -15,6 +15,7 @@ var words = require('./routes/words');
 var difficulty = require('./routes/difficulty');
 var login = require('./routes/login');
 var interestsdata = require('./routes/interestsdata');
+var changeinterest = require('./routes/changeinterest');
 
 // Example route
 // var user = require('./routes/user');
@@ -49,6 +50,7 @@ app.get('/difficulty', difficulty.view);
 app.get('/login', login.view);
 app.get('/interestsdata', interestsdata.view)
 app.get('/index', index.view);
+app.get('/changeinterest', changeinterest.changeInterests)
 
 // Example route
 // app.get('/users', user.list);

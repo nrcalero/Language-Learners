@@ -14,7 +14,6 @@
 		<h1>
 			Interests
 		</h1>
-
     <p>
       This is where users would edit storyboard topic preferences.
     </p>
@@ -22,11 +21,11 @@
 			<div class="row">
 				{{#each Interests}}
 				<div class="col-xs-4">
-					<i class="{{imageURL}}" style="font-size: 6em;"></i>
+					<i class="{{icon}}" style="font-size: 6em;"></i>
 					<p> {{name}} </p>
 					<label class="switch">
- 					 	<input type="checkbox" id="sports" {{enabled}}>
-  						<span class="slider round"></span>
+ 					 	<input type="checkbox" id="{{name}}" {{enabled}}>
+  					<span class="slider round"></span>
 					</label>
 				</div>
 				{{/each}}
@@ -40,20 +39,20 @@
 					<p>News</p>
 				</div>
 			</div>
-			<div class="row midtoggle"> 
+			<div class="row midtoggle">
 				<div class="col-xs-4">
 					<label class="switch">
  					 	<input type="checkbox" id="sports">
   						<span class="slider round"></span>
 					</label>
 				</div>
-				<div class="col-xs-4"> 
+				<div class="col-xs-4">
 					<label class="switch">
  					 	<input type="checkbox" id="fooddrink">
   						<span class="slider round"></span>
 					</label>
 				</div>
-				<div class="col-xs-4"> 
+				<div class="col-xs-4">
 					<label class="switch">
  					 	<input type="checkbox" id="news">
   						<span class="slider round"></span>
@@ -75,20 +74,20 @@
 					<p>Technology</p>
 				</div>
 			</div>
-			<div class="row"> 
-				<div class="col-xs-4"> 
+			<div class="row">
+				<div class="col-xs-4">
 					<label class="switch">
  					 	<input type="checkbox" id="music">
   						<span class="slider round" ></span>
 					</label>
 				</div>
-				<div class="col-xs-4"> 
+				<div class="col-xs-4">
 					<label class="switch">
  					 	<input type="checkbox" id="healthfitness">
   						<span class="slider round" ></span>
 					</label>
 				</div>
-				<div class="col-xs-4"> 
+				<div class="col-xs-4">
 					<label class="switch">
  					 	<input type="checkbox" id="technology">
   						<span class="slider round" ></span>
@@ -97,7 +96,7 @@
 			</div>
 		</div>
 	-->
-		<a type="button" class="btn btn-link btn-lg" href="/">
+		<a type="button" class="btn btn-link btn-lg" href="/index">
 			<span class="glyphicon glyphicon-chevron-left"></span>
 			<span>Back</span>
 		</a>

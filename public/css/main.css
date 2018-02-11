@@ -25,12 +25,6 @@ p,span {
   justify-content:  center;
 }
 
-.grid2 {
-  display:  flex;
-  flex-direction:  column;
-  justify-content:  center;
-}
-
 /* Big Icon */
 .icon {
   font-size: 5em;

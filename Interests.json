@@ -2,34 +2,34 @@
 	"Interests": [
 		{
 			"name": "Sports",
-			"imageURL": "fa fa-futbol-o",
-			"enabled": "checked" 
+			"icon": "fa fa-futbol-o",
+			"enabled": "checked"
 
 		},
 		{
 			"name": "Food & Drink",
-			"imageURL": "fa fa-coffee",
-			"enabled": "checked" 
+			"icon": "fa fa-coffee",
+			"enabled": "checked"
 		},
 		{
 			"name": "News",
-			"imageURL": "fa fa-newspaper-o",
-			"enabled": null 
+			"icon": "fa fa-newspaper-o",
+			"enabled": null
 		},
 		{
 			"name": "Music",
-			"imageURL": "fa fa-music",
-			"enabled": null 
+			"icon": "fa fa-music",
+			"enabled": null
 		},
 		{
 			"name": "Health & Fitness",
-			"imageURL": "fa fa-heartbeat",
-			"enabled": null 
+			"icon": "fa fa-heartbeat",
+			"enabled": null
 		},
 		{
 			"name": "Technology",
-			"imageURL": "fa fa-laptop",
-			"enabled": null 
+			"icon": "fa fa-laptop",
+			"enabled": null
 		}
 	]
 }

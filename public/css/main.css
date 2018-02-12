@@ -57,6 +57,12 @@ p,span {
   border-style: none;
 }
 
+#register {
+  background-color: white;
+  border-color: black;
+  color: black;
+}
+
 #interests {
   font-size: 2em;
   border: 1px solid #ccc;
@@ -65,6 +71,17 @@ p,span {
 
 .login-box {
   width: 500px;
+  padding: 20px;
+  margin: 200px auto 0 auto;
+  border-style: solid;
+  border-width: medium;
+  border-color: black;
+  color: black;
+  border-radius: 15px;
+}
+
+.register-box {
+ width: 500px;
   padding: 20px;
   margin: 200px auto 0 auto;
   border-style: solid;

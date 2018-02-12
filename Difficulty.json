@@ -15,7 +15,7 @@
     {
       "name": "Hard",
       "Description": "Eleven to thirteen words will be changed to your chosen language in the stories you read.",
-      "enabled": null,
+      "enabled": "checked",
       "btntype": "btn-danger"
     }
   ]

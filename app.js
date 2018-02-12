@@ -17,6 +17,7 @@ var login = require('./routes/login');
 var interestsdata = require('./routes/interestsdata');
 var changeinterest = require('./routes/changeinterest');
 var changedifficulty = require('./routes/changedifficulty');
+var register = require('./routes/register');
 
 // Example route
 // var user = require('./routes/user');
@@ -49,6 +50,7 @@ app.get('/storyboards', storyboards.view);
 app.get('/words', words.view);
 app.get('/difficulty', difficulty.view);
 app.get('/login', login.view);
+app.get('/register', register.view);
 app.get('/interestsdata', interestsdata.view)
 app.get('/index', index.view);
 app.get('/changeinterest', changeinterest.changeInterests)

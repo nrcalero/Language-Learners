@@ -1,0 +1,46 @@
+.larger {
+	font-size: 5em;
+	color: white;
+}
+
+label.btn {
+	width:95%;
+
+}
+
+input[type=checkbox]:checked + span {
+	color: black;
+	font-style: oblique;
+
+}
+
+.fa {
+  font-size: 6em;
+}
+
+.lower {
+  margin-top: 2%;
+}
+
+.topmargin {
+  margin-top: 10%;
+}
+
+.submitbtn {
+  color: black;
+  font-size: 2em;
+  box-sizing: border-box;
+  margin-bottom: 5%;
+}
+
+.submitbtn:hover {
+  color: black;
+}
+
+.backbtn {
+  margin-top: 0%;
+}
+
+.smaller {
+	font-size: 1.25em;
+}

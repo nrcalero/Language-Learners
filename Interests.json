@@ -3,19 +3,19 @@
     {
       "name": "Sports",
       "icon": "fa fa-futbol-o",
-      "enabled": "checked",
+      "enabled": null,
       "id": "sports"
     },
     {
       "name": "Food & Drink",
       "icon": "fa fa-coffee",
-      "enabled": "checked",
+      "enabled": null,
       "id": "fooddrink"
     },
     {
       "name": "News",
       "icon": "fa fa-newspaper-o",
-      "enabled": "checked",
+      "enabled": null,
       "id": "news"
     },
     {
@@ -27,7 +27,7 @@
     {
       "name": "Health & Fitness",
       "icon": "fa fa-heartbeat",
-      "enabled": "checked",
+      "enabled": null,
       "id": "healthfitness"
     },
     {

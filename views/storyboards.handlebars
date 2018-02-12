@@ -14,7 +14,7 @@
 				Stories
 			</h1>
 			<p>
-				Read the following story and figure out the definitions of the Spanish words using its context.
+				Choose an interest you specified and read up! Try figuring out what the word means from context, and you can always navigate to the word list for help.
 			</p>
 			<div class="container">
 				<div class="row">
@@ -23,10 +23,10 @@
 					</div>
 					<div class="col-xs-6">
 						<select id="interests" onchange="changeInterest()">
-							<option value="News">News</option>
-							<option value="Food">Food</option>
-							<option value="Sports">Sports</option>
-							<option value="Exercise">Exercise</option>
+							{{#each Interests}}
+							<option value={{id}}>{{name}}</option>
+					
+							{{/each}}
 						</select>
 					</div>
 				</div>

@@ -12,10 +12,7 @@ $(document).ready(function () {
             mydata.Interests[0].enabled = "checked";
           }
           else {
-                        console.log(JSON.stringify(mydata.Interests[0]));
-
             mydata.Interests[0].enabled = null;
-            console.log(JSON.stringify(mydata.Interests[0]));
           }
 
     });

@@ -5,11 +5,15 @@ function init() {
 
 $(document).ready(function () {
   initializePage();
+  var interests = $.getJSON("interestdata", function(interests) {});
+  var stories = $.getJSON("storydata", function(mydata) {
+      alert(mydata);
+  })
 
   /* 'Next Story' listener */
   $('#next').click(function () {
     console.log('Button clicked');
-    event.preventDefault();
+    event.preventDefault();q
     $('.story p').text('The story will change when the "Next Story" button is clicked.');
   });
 

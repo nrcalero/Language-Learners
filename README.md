@@ -1,4 +1,4 @@
 Language Learners
 =================
 
-Project Description
+A fun language learning app developed for COGS 120.

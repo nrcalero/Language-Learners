@@ -5,7 +5,7 @@ function init() {
 
 $(document).ready(function () {
   initializePage();
-  var interests = $.getJSON("interestdata", function(interests) {});
+  var interests = $.getJSON("interestsdata", function(interests) {});
   var stories = $.getJSON("storydata", function(mydata) {
       alert(mydata);
   })
@@ -13,7 +13,7 @@ $(document).ready(function () {
   /* 'Next Story' listener */
   $('#next').click(function () {
     console.log('Button clicked');
-    event.preventDefault();q
+    event.preventDefault();
     $('.story p').text('The story will change when the "Next Story" button is clicked.');
   });
 

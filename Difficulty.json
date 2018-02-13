@@ -9,7 +9,7 @@
     {
       "name": "Medium",
       "Description": "Eight to ten words will be changed to your chosen language in the stories you read.",
-      "enabled": null,
+      "enabled": "checked",
       "btntype": "btn-warning"
     },
     {

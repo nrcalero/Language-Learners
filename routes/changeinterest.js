@@ -1,5 +1,4 @@
 var data = require('../Interests.json');
-var updater = require('jsonfile-updater');
 var fs = require('file-system');
 
 /*

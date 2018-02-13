@@ -1,6 +1,5 @@
 var data = require('../Difficulty.json');
 var fs = require('fs');
-var updater = require('jsonfile-updater');
 /*
  * GET Interests page.
  */

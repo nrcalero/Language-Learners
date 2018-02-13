@@ -1,6 +1,6 @@
 var data = require('../Interests.json');
 var updater = require('jsonfile-updater');
-var fs = require('fs');
+var fs = require('file-system');
 
 /*
  * GET Interests page.

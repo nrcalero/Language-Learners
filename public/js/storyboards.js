@@ -2,40 +2,69 @@ function init() {
   'use strict';
   return true;
 }
+var maxsize = 2;
+var index = 0;
 
 $(document).ready(function () {
   initializePage();
-  var index = 1;
-  var stories = getStoryData();
-  var interests = getInterestData();
-  console.log(interests.Interests.length);
-
-
-
-
-  $('#next').click(function () {
-    console.log('Button clicked');
-    event.preventDefault();q
-    $('.story p').text('The story will change when the "Next Story" button is clicked.');
+  $('.story p').text()
+  $('#next').click(function() {
+    event.preventDefault();
+    initializePage();
   });
+  
 
   /* 'Word List' Listener */
   $('#words').click(function () {
     event.preventDefault();
     alert('Popup with words in the text will appear!');
+
+
   });
 });
 
+
+
 function initializePage() {
-  console.log('Javascript connected!');
+  var usedstories = makeUsedStories();
+  var interest = document.getElementById('interests').value;
+  console.log(index);
+  if (interest == "sports") {
+    $('.story p').text(usedstories.sports[++index % maxsize].body);
+  }
+  if (interest == "fooddrink") {
+    $('.story p').text(usedstories.fooddrink[++index % maxsize].body);
+  }
+  if (interest == "news") {
+    $('.story p').text(usedstories.news[++index % maxsize].body);
+  }
+  if (interest == "music") {
+    $('.story p').text(usedstories.music[++index % maxsize].body);
+  }
+  if (interest == "healthfitness") {
+    $('.story p').text(usedstories.healthfitness[++index % maxsize].body);
+  }
+  if (interest == "technology") {
+    $('.story p').text(usedstories.technology[++index % maxsize].body);
+  }
 }
 
-function changeInterest() {
-  var interest = document.getElementById('interests').value;
-  $('.story p').text('This story will be about ' + interest + '!');
+function makeUsedStories() {
+  var usedstories = {};
+  var stories = getStoryData();
+  var interests = getInterestData();
+  for (var i = 0; i < interests.Interests.length; ++i) {
+    if (interests.Interests[i].enabled == "checked") {
+      $.extend(usedstories, stories.stories[i]);
+    }
+  }
+  return usedstories;
+
 }
+
 
 function getStoryData() {
+
   var result = null;
   $.ajax({
     async:false,

@@ -9,13 +9,13 @@
     {
       "name": "Medium",
       "Description": "Eight to ten words will be changed to your chosen language in the stories you read.",
-      "enabled": "checked",
+      "enabled": null,
       "btntype": "btn-warning"
     },
     {
       "name": "Hard",
       "Description": "Eleven to thirteen words will be changed to your chosen language in the stories you read.",
-      "enabled": "checked",
+      "enabled": null,
       "btntype": "btn-danger"
     }
   ]

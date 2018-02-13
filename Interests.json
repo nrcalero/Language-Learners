@@ -9,7 +9,7 @@
     {
       "name": "Food & Drink",
       "icon": "fa fa-coffee",
-      "enabled": null,
+      "enabled": "checked",
       "id": "fooddrink"
     },
     {

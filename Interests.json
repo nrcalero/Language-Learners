@@ -3,7 +3,7 @@
     {
       "name": "Sports",
       "icon": "fa fa-futbol-o",
-      "enabled": null,
+      "enabled": "checked",
       "id": "sports"
     },
     {

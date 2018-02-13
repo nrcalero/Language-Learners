@@ -87,14 +87,20 @@ p,span {
 }
 
 .register-box {
-  max-width: 500px;
+  max-width: 350px;
+  max-height: 400px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
   padding: 20px;
-  margin: 200px auto 0 auto;
   border-style: solid;
   border-width: medium;
   border-color: black;
-  color: black;
   border-radius: 15px;
+  color: black;
 }
 
 @media (max-width: 767px) {

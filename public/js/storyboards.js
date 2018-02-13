@@ -5,12 +5,21 @@ function init() {
 
 $(document).ready(function () {
   initializePage();
+<<<<<<< HEAD
   var interests = $.getJSON("interestsdata", function(interests) {});
   var stories = $.getJSON("storydata", function(mydata) {
       alert(mydata);
   })
+=======
+  var index = 1;
+  var stories = getStoryData();
+  var interests = getInterestData();
+  console.log(interests.Interests.length);
 
-  /* 'Next Story' listener */
+
+
+>>>>>>> 818b25cacb33a4a6713224f8f1c10ed12ee0e89f
+
   $('#next').click(function () {
     console.log('Button clicked');
     event.preventDefault();
@@ -32,3 +41,29 @@ function changeInterest() {
   var interest = document.getElementById('interests').value;
   $('.story p').text('This story will be about ' + interest + '!');
 }
+
+function getStoryData() {
+  var result = null;
+  $.ajax({
+    async:false,
+    url: "storydata",
+    dataType: "json",
+    success: function(data) {
+      result = data;
+    }});
+  return result;
+}
+
+function getInterestData() {
+  var result = null;
+  $.ajax({
+    async:false,
+    url: "interestsdata",
+    dataType: "json",
+    success: function(data) {
+      result = data;
+    }});
+  return result;
+}
+
+

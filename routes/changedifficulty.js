@@ -1,4 +1,5 @@
 var data = require('../Difficulty.json');
+var fs = require('fs');
 
 /*
  * GET Interests page.

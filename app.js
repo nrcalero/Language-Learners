@@ -59,6 +59,6 @@ app.get('/changedifficulty', changedifficulty.changeDifficulty)
 // Example route
 // app.get('/users', user.list);
 
-http.createServer(app).listen(app.get('port'), function () {
+http.createServer(app).listen(app.get(process.env.PORT || 3000), function () {
   console.log('Express server listening on port ' + app.get('port'));
 });

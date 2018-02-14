@@ -7,24 +7,13 @@ var index = 0;
 
 $(document).ready(function () {
   initializePage();
-  $('.story p').text()
-  $('#next').click(function() {
-    event.preventDefault();
-    initializePage();
   var index = 1;
   var stories = getStoryData();
   var interests = getInterestData();
   console.log(interests.Interests.length);
-
-
-
-
   });
   
 
-  /* 'Word List' Listener */
-
-});
 
 
 

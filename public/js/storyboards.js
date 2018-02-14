@@ -11,6 +11,14 @@ $(document).ready(function () {
   $('#next').click(function() {
     event.preventDefault();
     initializePage();
+  var index = 1;
+  var stories = getStoryData();
+  var interests = getInterestData();
+  console.log(interests.Interests.length);
+
+
+
+
   });
   
 

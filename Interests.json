@@ -15,13 +15,13 @@
     {
       "name": "News",
       "icon": "fa fa-newspaper-o",
-      "enabled": null,
+      "enabled": "checked",
       "id": "news"
     },
     {
       "name": "Music",
       "icon": "fa fa-music",
-      "enabled": null,
+      "enabled": "checked",
       "id": "music"
     },
     {
@@ -33,7 +33,7 @@
     {
       "name": "Technology",
       "icon": "fa fa-laptop",
-      "enabled": null,
+      "enabled": "checked",
       "id": "technology"
     }
   ]

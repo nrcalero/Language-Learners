@@ -2,47 +2,97 @@ function init() {
   'use strict';
   return true;
 }
+var maxsize = 2;
+var index = 0;
 
 $(document).ready(function () {
   initializePage();
-<<<<<<< HEAD
-  var interests = $.getJSON("interestsdata", function(interests) {});
-  var stories = $.getJSON("storydata", function(mydata) {
-      alert(mydata);
-  })
-=======
   var index = 1;
   var stories = getStoryData();
   var interests = getInterestData();
   console.log(interests.Interests.length);
-
-
-
->>>>>>> 818b25cacb33a4a6713224f8f1c10ed12ee0e89f
-
-  $('#next').click(function () {
-    console.log('Button clicked');
-    event.preventDefault();
-    $('.story p').text('The story will change when the "Next Story" button is clicked.');
   });
+  
 
-  /* 'Word List' Listener */
-  $('#words').click(function () {
-    event.preventDefault();
-    alert('Popup with words in the text will appear!');
-  });
-});
+
+
 
 function initializePage() {
-  console.log('Javascript connected!');
+  event.preventDefault();
+  var usedstories = makeUsedStories();
+  var interest = document.getElementById('interests').value;
+  $("#text").empty();
+  $("#text").append('<p> <em><strong> Word list: </strong></em> </p>');
+  if (interest == "sports") {
+    $('.story p').text(usedstories.sports[++index % maxsize].body);
+    $('#titlestrong').text(usedstories.sports[index % maxsize].title);
+
+    Object.keys(usedstories.sports[index % maxsize].words[0]).forEach(function(key) {
+      $('#text').append('<p>' + key + ' : ' + usedstories.sports[index % maxsize].words[0][key] + '</p>');
+    });
+
+  }
+  if (interest == "fooddrink") {
+    $('.story p').text(usedstories.fooddrink[++index % maxsize].body);
+    $('#titlestrong').text(usedstories.fooddrink[index % maxsize].title);
+    Object.keys(usedstories.fooddrink[index % maxsize].words[0]).forEach(function(key) {
+      $('#text').append('<p>' + key + ' : ' + usedstories.fooddrink[index % maxsize].words[0][key] + '</p>');
+    });
+  }
+  if (interest == "news") {
+    $('.story p').text(usedstories.news[++index % maxsize].body);
+    $('#titlestrong').text(usedstories.news[index % maxsize].title);
+    Object.keys(usedstories.news[index % maxsize].words[0]).forEach(function(key) {
+      $('#text').append('<p>' + key + ' : ' + usedstories.news[index % maxsize].words[0][key] + '</p>');
+    });
+
+  }
+  if (interest == "music") {
+    $('.story p').text(usedstories.music[++index % maxsize].body);
+    $('#titlestrong').text(usedstories.music[index % maxsize].title);
+
+    Object.keys(usedstories.music[index % maxsize].words[0]).forEach(function(key) {
+      $('#text').append('<p>' + key + ' : ' + usedstories.music[index % maxsize].words[0][key] + '</p>');
+    });
+
+
+  }
+  if (interest == "healthfitness") {
+    $('.story p').text(usedstories.healthfitness[++index % maxsize].body);
+    $('#titlestrong').text(usedstories.healthfitness[index % maxsize].title);
+
+    Object.keys(usedstories.healthfitness[index % maxsize].words[0]).forEach(function(key) {
+      $('#text').append('<p>' + key + ' : ' + usedstories.healthfitness[index % maxsize].words[0][key] + '</p>');
+    });
+
+  }
+  if (interest == "technology") {
+    $('.story p').text(usedstories.technology[++index % maxsize].body);
+    $('#titlestrong').text(usedstories.technology[index % maxsize].title);
+
+    Object.keys(usedstories.technology[index % maxsize].words[0]).forEach(function(key) {
+      $('#text').append('<p>' + key + ' : ' + usedstories.technology[index % maxsize].words[0][key] + '</p>');
+    });
+
+  }
 }
 
-function changeInterest() {
-  var interest = document.getElementById('interests').value;
-  $('.story p').text('This story will be about ' + interest + '!');
+function makeUsedStories() {
+  var usedstories = {};
+  var stories = getStoryData();
+  var interests = getInterestData();
+  for (var i = 0; i < interests.Interests.length; ++i) {
+    if (interests.Interests[i].enabled == "checked") {
+      $.extend(usedstories, stories.stories[i]);
+    }
+  }
+  return usedstories;
+
 }
+
 
 function getStoryData() {
+
   var result = null;
   $.ajax({
     async:false,
@@ -66,4 +116,12 @@ function getInterestData() {
   return result;
 }
 
+function on() {
+  event.preventDefault();
+    document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+    document.getElementById("overlay").style.display = "none";
+}
 

@@ -52,6 +52,13 @@ p,span {
   background-color: #AED6F1;*/
 }
 
+.vocab {
+  padding: 30px;
+  border-style: solid;
+  height: 60%;
+  overflow-y: scroll;
+}
+
 #login {
   background-color: black;
   border-style: none;

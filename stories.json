@@ -1,8 +1,6 @@
 {
-  "stories": [
-  {
-      "sports": [
-        {
+  "stories": [{
+      "sports": [{
           "title": "Dwayne Wade returns to Miami",
           "body": "It doesn’t matter that he isn’t the superstar he once was, or that at 36 years old he’s near the end of his career. Dwyane Wade returned to Miami on Friday noche for his segundo stint with the Heat and for a few moments all felt right with the mundo. Sporting what’s in all likelihood the coolest jersey in franchise history, Wade jumped off the banco early in the first quarter against the Bucks and the ciudad of Miami collectively melted.",
           "interest": "Sports",
@@ -10,197 +8,186 @@
           "words": [{
             "noche": "night",
             "segundo": "second",
-            "mundo": "mundo", 
+            "mundo": "mundo",
             "banco": "bank",
             "ciudad": "city"
           }]
         },
-
         {
           "title": "Virginia is the number 1 seed in March Madness",
           "body": "Virginia (23-2), Villanova (23-2), Xavier (23-3) and Purdue (23-4) would get No. uno seeds if the NCAA men's basketball tournament started domingo, according to a bracket preview released by the selection committee. Virginia would be the No. 1 overall seed, despite its overtime fracaso to Virginia Tech on Saturday.",
           "interest": "Sports",
           "index": "2",
           "words": [{
-            "uno": "one", 
-            "domingo": "Sunday", 
+            "uno": "one",
+            "domingo": "Sunday",
             "fracaso": "failure"
           }]
         }
       ]
-  },
-  {
-      "fooddrink": [
-          {
-            "title": "KFC is giving our Scratch and Sniffs that smell like chicken",
-            "body": "Remember how in escuela, we used to give out Valentine's Day cards and candy to everybody in clase? Now that we're grown up, nobody spreads the amor anymore, sadly. KFC is giving us a chance to relive our childhood, though, with some hilariously nostalgic scratch n sniff Valentines that yes, smell like pollo.",
-            "interest": "Food",
-            "index": "1",
-            "words": [{
-              "escuela": "school", 
-              "clase": "class", 
-              "amor": "love", 
-              "pollo": "chicken"
-            }]
-          },
-          {
-            "title": "McDonald's free meals at the Olympics",
-            "body": "Olympic athletes already have bodies in peak condition and talentos that allow them competir on the world’s grandest sporting escenario. As if that weren’t enough to make the rest of us celoso, this year’s winter Olympians get to indulge in complimentary Big Macs, too. McDonald’s has set up dos temporary outposts that are catering to competitors and fans in South Korea for the Pyeongchang games.",
-            "interest": "Food",
-            "index": "2", 
-            "words": [{
-              "talentos": "talents", 
-              "competir": "to compete", 
-              "escenario": "stage", 
-              "celoso": "jealous", 
-              "dos": "two"
-            }]
-          }
-      ]
-  },
-  {
-    "news" : [
+    },
+    {
+      "fooddrink": [{
+          "title": "KFC is giving our Scratch and Sniffs that smell like chicken",
+          "body": "Remember how in escuela, we used to give out Valentine's Day cards and candy to everybody in clase? Now that we're grown up, nobody spreads the amor anymore, sadly. KFC is giving us a chance to relive our childhood, though, with some hilariously nostalgic scratch n sniff Valentines that yes, smell like pollo.",
+          "interest": "Food",
+          "index": "1",
+          "words": [{
+            "escuela": "school",
+            "clase": "class",
+            "amor": "love",
+            "pollo": "chicken"
+          }]
+        },
         {
+          "title": "McDonald's free meals at the Olympics",
+          "body": "Olympic athletes already have bodies in peak condition and talentos that allow them competir on the world’s grandest sporting escenario. As if that weren’t enough to make the rest of us celoso, this year’s winter Olympians get to indulge in complimentary Big Macs, too. McDonald’s has set up dos temporary outposts that are catering to competitors and fans in South Korea for the Pyeongchang games.",
+          "interest": "Food",
+          "index": "2",
+          "words": [{
+            "talentos": "talents",
+            "competir": "to compete",
+            "escenario": "stage",
+            "celoso": "jealous",
+            "dos": "two"
+          }]
+        }
+      ]
+    },
+    {
+      "news": [{
           "title": "Trump's budget will wrestle with new deficits",
           "body": "The 2019 presupuesto that President Trump will enviar to Congress Monday will attempt to 'bend the trajectory down' on trillion-dollar budget deficits — even after Trump agreed eliminar the spending caps in a budget deal last week, White House budget director Mick Mulvaney dije Sunday. 'Just because this deal was signed does not mean the futuro is written in stone. We do have a chance still cambiar this trajectory and that's what the budget will show,' Mulvaney told Fox News Sunday. ",
           "interest": "News",
           "index": "2",
           "words": [{
-            "presupuesto": "persuading", 
-            "enviar": "submit", 
-            "eliminar": "remove", 
-            "dije": "said", 
-            "futuro": "future", 
+            "presupuesto": "persuading",
+            "enviar": "submit",
+            "eliminar": "remove",
+            "dije": "said",
+            "futuro": "future",
             "cambiar": "change"
           }]
         },
         {
-        "title": "Why are peope dying from the flu?",
-        "body": "As far as flu seasons go, experts are saying the levels of visits to hospitals and emergency cuartos for this one are comparable to the 2009 swine flu. As such, reports of otherwise healthy or joven people dying from the infection are flying around. The cuentos have been shocking, especially because many of these people were fuera the high-risk grupos for flu-related death that include pregnant mujeres, small children and the elderly.",
-        "interest": "News",
-        "index": "1",
-        "words": [{
-          "cuartos": "rooms", 
-          "joven": "young", 
-          "cuentos": "stories", 
-          "fuera": "outside", 
-          "mujeres": "women"
-        }]
+          "title": "Why are peope dying from the flu?",
+          "body": "As far as flu seasons go, experts are saying the levels of visits to hospitals and emergency cuartos for this one are comparable to the 2009 swine flu. As such, reports of otherwise healthy or joven people dying from the infection are flying around. The cuentos have been shocking, especially because many of these people were fuera the high-risk grupos for flu-related death that include pregnant mujeres, small children and the elderly.",
+          "interest": "News",
+          "index": "1",
+          "words": [{
+            "cuartos": "rooms",
+            "joven": "young",
+            "cuentos": "stories",
+            "fuera": "outside",
+            "mujeres": "women"
+          }]
         }
       ]
-  },
-    {
-    "music": [
-    {
-      "title": "Justin Timberlake rides Super Bowl to Number One",
-      "body": "Justin Timberlake went from the Super Bowl halftime programa to the top of the Billboard 200 as the singer's nuevo album Hombre of the Woods opened at Number One with the best-selling semana of 2018 so far. Man of the Woods opened with 293,000 total copias, including 242,000 traditional copies, in its first week on shelves, a periodo highlighted by Timberlake's hits-filled, Prince-honoring halftime spectacle at Super Bowl LII in Minneapolis.",
-      "interest": "Music",
-      "index": "1", 
-      "words": [{
-        "programa": "program", 
-        "nuevo": "new", 
-        "copias": "copies", 
-        "periodo": "period",
-        "Hombre": "Man",
-        "semana": "week"
-      }]
     },
     {
-      "title": "Google is trying to stop deception in music ticket sales",
-      "body": "Buying concert boletos online has siempre been a bit of a headache, pero it looks like Google is trying to make things more straightforward. This week, the company announced plans to adjust how resellers are ranked in its AdWords algorithm, as well as new rules that ban a number of deceptive sites and requiere more transparency from sites como StubHub y Viagogo. According to Billboard, ticket resellers won’t be able to “imply or lead clientes to think their site is the primary point of sale for tickets.”",
-      "interest": "Music",
-      "index": "2",
-      "words": [{
-        "boletos": "tickets",
-        "siempre": "always", 
-        "pero": "but", 
-        "requiere": "requires", 
-        "como": "as"
-      }]
-    }
-  ]
-  },
-   {
-    "healthfitness" : [
-        {
-        "title": "How long should I wait after a cold to go out",
-        "body": "But should you skip out on all the divertido just because a cold or the flu has left you feeling a little under the clima? As long as you’re not sweating bullets with a fiebre and come armed with a pocketful of Ricola drops in case you break out in a coughing fit, it can’t do any harm to join the fiesta, right? Even though you might feel better, it doesn’t mean you are better, and even though you mean well, you’re spreading no joy by spreading your germs around. Simply put, you should consider yourself contagious if you still feel under the weather",
-        "interest": "Health",
-        "index": "1",
-        "words": [{
-          "divertido": "funny", 
-          "clima": "weather", 
-          "fiebre": "fever", 
-          "fiesta": "party"
-        }]
+      "music": [{
+          "title": "Justin Timberlake rides Super Bowl to Number One",
+          "body": "Justin Timberlake went from the Super Bowl halftime programa to the top of the Billboard 200 as the singer's nuevo album Hombre of the Woods opened at Number One with the best-selling semana of 2018 so far. Man of the Woods opened with 293,000 total copias, including 242,000 traditional copies, in its first week on shelves, a periodo highlighted by Timberlake's hits-filled, Prince-honoring halftime spectacle at Super Bowl LII in Minneapolis.",
+          "interest": "Music",
+          "index": "1",
+          "words": [{
+            "programa": "program",
+            "nuevo": "new",
+            "copias": "copies",
+            "periodo": "period",
+            "Hombre": "Man",
+            "semana": "week"
+          }]
         },
         {
-        "title": "How to eat fruit for weight loss",
-        "body": "Here's some good news if you love berries, pears, and manzanas: Ditching fruit isn’t necessary to lose weight. It’s also not inteligente. Yes, fruit contains carbs and naturally-occurring sugar. But there are important reasons to make fruit a daily staple in your dieta, even when you're working to slim down.  The key is comer it strategically. Doing so can actually ayuda you shed pounds. Natural substances in fruit—including vitamins, minerals, antioxidants, fiber, and prebiotics—are incredibly bueno for you, not just in terms of protecting against chronic diseases, but also for managing your weight. Even if you eat plenty of verduras, nixing frutas means missing out on the unique antioxidants they provide",
-        "interest": "Health",
-        "index": "2",
-        "words": [{
-          "manzanas" : "apples", 
-          "inteligente": "intelligent", 
-          "dieta": "diet", 
-          "comer": "eat", 
-          "ayuda": "help", 
-          "bueno": "good", 
-          "verduras": "vegetables", 
-          "frutas": "fruits"
-        }]
+          "title": "Google is trying to stop deception in music ticket sales",
+          "body": "Buying concert boletos online has siempre been a bit of a headache, pero it looks like Google is trying to make things more straightforward. This week, the company announced plans to adjust how resellers are ranked in its AdWords algorithm, as well as new rules that ban a number of deceptive sites and requiere more transparency from sites como StubHub y Viagogo. According to Billboard, ticket resellers won’t be able to “imply or lead clientes to think their site is the primary point of sale for tickets.”",
+          "interest": "Music",
+          "index": "2",
+          "words": [{
+            "boletos": "tickets",
+            "siempre": "always",
+            "pero": "but",
+            "requiere": "requires",
+            "como": "as"
+          }]
         }
-    ]
-  },
-  {
-    "technology": [
-    {
-      "title": "Apple will offer repairs damaged Homepod cable for $29",
-      "body": "It turns out that Apple’s HomePod is caro to repair: an out-of-warranty device will run 80 por ciento of the cost of a new one at $279. Fortunately, the empresa will repair the device’s built in cord for $29 “in some instances,” according to 9to5Mac. 9to5Mac viewed an internal memo sent to tiendas and authorized service providers, which incluye directions for empleados to diagnose issues, and to make sure that the device hasn’t been damaged by the user. ",
-      "interest": "Technology",
-      "index": "1", 
-      "words": [{
-        "caro": "expensive", 
-        "por ciento": "percent", 
-        "empresa": "company", 
-        "tiendas": "shops", 
-        "incluye": "includes", 
-        "empleados": "employes"
-      }]
+      ]
     },
     {
-      "title": "Google says pets are driving car searches",
-      "body": "Coche companies might want to spend more tiempo thinking about building features for dogs and gatos into their new vehicles: dog hammocks and other pet-friendly accesorios are among the top searches consumers make para their vehicles in the US, according to findings released today in Google’s 2018 Auto Trends Report.", 
-      "interest": "Technology",
-      "index": "2",
-      "words": [{
-        "Coche": "car", 
-        "tiempo": "weather", 
-        "gatos": "cats", 
-        "accesorios": "accessories", 
-        "para": "for"
-      }]
+      "healthfitness": [{
+          "title": "How long should I wait after a cold to go out",
+          "body": "But should you skip out on all the divertido just because a cold or the flu has left you feeling a little under the clima? As long as you’re not sweating bullets with a fiebre and come armed with a pocketful of Ricola drops in case you break out in a coughing fit, it can’t do any harm to join the fiesta, right? Even though you might feel better, it doesn’t mean you are better, and even though you mean well, you’re spreading no joy by spreading your germs around. Simply put, you should consider yourself contagious if you still feel under the weather",
+          "interest": "Health",
+          "index": "1",
+          "words": [{
+            "divertido": "funny",
+            "clima": "weather",
+            "fiebre": "fever",
+            "fiesta": "party"
+          }]
+        },
+        {
+          "title": "How to eat fruit for weight loss",
+          "body": "Here's some good news if you love berries, pears, and manzanas: Ditching fruit isn’t necessary to lose weight. It’s also not inteligente. Yes, fruit contains carbs and naturally-occurring sugar. But there are important reasons to make fruit a daily staple in your dieta, even when you're working to slim down.  The key is comer it strategically. Doing so can actually ayuda you shed pounds. Natural substances in fruit—including vitamins, minerals, antioxidants, fiber, and prebiotics—are incredibly bueno for you, not just in terms of protecting against chronic diseases, but also for managing your weight. Even if you eat plenty of verduras, nixing frutas means missing out on the unique antioxidants they provide",
+          "interest": "Health",
+          "index": "2",
+          "words": [{
+            "manzanas": "apples",
+            "inteligente": "intelligent",
+            "dieta": "diet",
+            "comer": "eat",
+            "ayuda": "help",
+            "bueno": "good",
+            "verduras": "vegetables",
+            "frutas": "fruits"
+          }]
+        }
+      ]
     },
     {
-      "title": "Snapchat is now selling merchandise in its app",
-      "body": "Snapchat has dabbled in merchandise antes, with branded towels, backpacks, and the infamous dancing pancho costume. But now the company is taking things a pequeno further with a full-fledged merch store. Accessible on the Discover tab of the app, the Snapchat store tiene Snap-themed items like a plush version of the dancing hot dog ($19.99, con posable arms and a removable bun), a fuego emoji Snap streak hat ($29.99), a Winkface sweatshirt ($49.99), dog lens tee ($29.99), and a “Bring back best friends” sweatshirt ($49.99).",
-     "interest": "Technology",
-      "index": "3",
-      "words": [{
-        "antes": "before", 
-        "pancho": "hot dog", 
-        "pequeno": "little", 
-        "tiene": "has", 
-        "con": "with", 
-        "fuego": "fire"
-      }]
+      "technology": [{
+          "title": "Apple will offer repairs damaged Homepod cable for $29",
+          "body": "It turns out that Apple’s HomePod is caro to repair: an out-of-warranty device will run 80 por ciento of the cost of a new one at $279. Fortunately, the empresa will repair the device’s built in cord for $29 “in some instances,” according to 9to5Mac. 9to5Mac viewed an internal memo sent to tiendas and authorized service providers, which incluye directions for empleados to diagnose issues, and to make sure that the device hasn’t been damaged by the user. ",
+          "interest": "Technology",
+          "index": "1",
+          "words": [{
+            "caro": "expensive",
+            "por ciento": "percent",
+            "empresa": "company",
+            "tiendas": "shops",
+            "incluye": "includes",
+            "empleados": "employes"
+          }]
+        },
+        {
+          "title": "Google says pets are driving car searches",
+          "body": "Coche companies might want to spend more tiempo thinking about building features for dogs and gatos into their new vehicles: dog hammocks and other pet-friendly accesorios are among the top searches consumers make para their vehicles in the US, according to findings released today in Google’s 2018 Auto Trends Report.",
+          "interest": "Technology",
+          "index": "2",
+          "words": [{
+            "Coche": "car",
+            "tiempo": "weather",
+            "gatos": "cats",
+            "accesorios": "accessories",
+            "para": "for"
+          }]
+        },
+        {
+          "title": "Snapchat is now selling merchandise in its app",
+          "body": "Snapchat has dabbled in merchandise antes, with branded towels, backpacks, and the infamous dancing pancho costume. But now the company is taking things a pequeno further with a full-fledged merch store. Accessible on the Discover tab of the app, the Snapchat store tiene Snap-themed items like a plush version of the dancing hot dog ($19.99, con posable arms and a removable bun), a fuego emoji Snap streak hat ($29.99), a Winkface sweatshirt ($49.99), dog lens tee ($29.99), and a “Bring back best friends” sweatshirt ($49.99).",
+          "interest": "Technology",
+          "index": "3",
+          "words": [{
+            "antes": "before",
+            "pancho": "hot dog",
+            "pequeno": "little",
+            "tiene": "has",
+            "con": "with",
+            "fuego": "fire"
+          }]
+        }
+      ]
     }
   ]
-  }
-
-
-]
 }
-
-
-    

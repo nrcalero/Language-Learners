@@ -25,7 +25,7 @@ function initializePage() {
   $("#text").append('<p> <em><strong> Word list: </strong></em> </p>');
   if (interest == "sports") {
     $('.story p').text(usedstories.sports[++index % maxsize].body);
-    $('#wordlist').text(usedstories.sports[index % maxsize].words);
+    $('#titlestrong').text(usedstories.sports[index % maxsize].title);
 
     Object.keys(usedstories.sports[index % maxsize].words[0]).forEach(function(key) {
       $('#text').append('<p>' + key + ' : ' + usedstories.sports[index % maxsize].words[0][key] + '</p>');
@@ -34,14 +34,14 @@ function initializePage() {
   }
   if (interest == "fooddrink") {
     $('.story p').text(usedstories.fooddrink[++index % maxsize].body);
-    console.log(JSON.stringify(usedstories.fooddrink[index % maxsize].words[0]));
+    $('#titlestrong').text(usedstories.fooddrink[index % maxsize].title);
     Object.keys(usedstories.fooddrink[index % maxsize].words[0]).forEach(function(key) {
       $('#text').append('<p>' + key + ' : ' + usedstories.fooddrink[index % maxsize].words[0][key] + '</p>');
     });
   }
   if (interest == "news") {
     $('.story p').text(usedstories.news[++index % maxsize].body);
-    $('#wordlist').text(usedstories.news[index % maxsize].words);
+    $('#titlestrong').text(usedstories.news[index % maxsize].title);
     Object.keys(usedstories.news[index % maxsize].words[0]).forEach(function(key) {
       $('#text').append('<p>' + key + ' : ' + usedstories.news[index % maxsize].words[0][key] + '</p>');
     });
@@ -49,7 +49,8 @@ function initializePage() {
   }
   if (interest == "music") {
     $('.story p').text(usedstories.music[++index % maxsize].body);
-    $('#wordlist').text(usedstories.music[index % maxsize].words);
+    $('#titlestrong').text(usedstories.music[index % maxsize].title);
+
     Object.keys(usedstories.music[index % maxsize].words[0]).forEach(function(key) {
       $('#text').append('<p>' + key + ' : ' + usedstories.music[index % maxsize].words[0][key] + '</p>');
     });
@@ -58,7 +59,8 @@ function initializePage() {
   }
   if (interest == "healthfitness") {
     $('.story p').text(usedstories.healthfitness[++index % maxsize].body);
-    $('#wordlist').text(usedstories.healthfitness[index % maxsize].words);
+    $('#titlestrong').text(usedstories.healthfitness[index % maxsize].title);
+
     Object.keys(usedstories.healthfitness[index % maxsize].words[0]).forEach(function(key) {
       $('#text').append('<p>' + key + ' : ' + usedstories.healthfitness[index % maxsize].words[0][key] + '</p>');
     });
@@ -66,7 +68,8 @@ function initializePage() {
   }
   if (interest == "technology") {
     $('.story p').text(usedstories.technology[++index % maxsize].body);
-    $('#wordlist').text(usedstories.technology[index % maxsize].words);
+    $('#titlestrong').text(usedstories.technology[index % maxsize].title);
+
     Object.keys(usedstories.technology[index % maxsize].words[0]).forEach(function(key) {
       $('#text').append('<p>' + key + ' : ' + usedstories.technology[index % maxsize].words[0][key] + '</p>');
     });

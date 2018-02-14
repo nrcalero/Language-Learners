@@ -18,6 +18,7 @@ $(document).ready(function () {
 
 
 function initializePage() {
+  event.preventDefault();
   var usedstories = makeUsedStories();
   var interest = document.getElementById('interests').value;
   $("#text").empty();

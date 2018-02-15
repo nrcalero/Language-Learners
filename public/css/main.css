@@ -1,6 +1,6 @@
 /* Page Header */
 h1 {
-  font-size:  6em;
+  font-size:  5em;
 }
 
 /* Fix for weird view on desktop browsers */
@@ -13,7 +13,7 @@ h1 {
 /* Info boxes and buttons */
 p,span {
   color: black;
-  font-size: 2em;
+  font-size: 1em;
 }
 
 /* Grid for home page, and interests page */
@@ -52,6 +52,13 @@ p,span {
   background-color: #AED6F1;*/
 }
 
+.vocab {
+  padding: 30px;
+  border-style: solid;
+  height: 60%;
+  overflow-y: scroll;
+}
+
 #login {
   background-color: black;
   border-style: none;
@@ -64,31 +71,43 @@ p,span {
 }
 
 #interests {
-  font-size: 2em;
+  font-size: 1em;
   border: 1px solid #ccc;
   width: auto;
 }
 
 .login-box {
-  width: 500px;
+  max-width: 350px;
+  max-height: 350px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
   padding: 20px;
-  margin: 200px auto 0 auto;
   border-style: solid;
   border-width: medium;
   border-color: black;
-  color: black;
   border-radius: 15px;
+  color: black;
 }
 
 .register-box {
- width: 500px;
+  max-width: 350px;
+  max-height: 400px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
   padding: 20px;
-  margin: 200px auto 0 auto;
   border-style: solid;
   border-width: medium;
   border-color: black;
-  color: black;
   border-radius: 15px;
+  color: black;
 }
 
 @media (max-width: 767px) {

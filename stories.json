@@ -1,109 +1,502 @@
 {
-  "stories": [
-  {
-      "sports": [
-        {
+  "stories": [{
+      "sports": [{
           "title": "Dwayne Wade returns to Miami",
           "body": "It doesn’t matter that he isn’t the superstar he once was, or that at 36 years old he’s near the end of his career. Dwyane Wade returned to Miami on Friday noche for his segundo stint with the Heat and for a few moments all felt right with the mundo. Sporting what’s in all likelihood the coolest jersey in franchise history, Wade jumped off the banco early in the first quarter against the Bucks and the ciudad of Miami collectively melted.",
           "interest": "Sports",
-          "index": "1"
+          "index": "1",
+          "words": [{
+            "noche": "night",
+            "segundo": "second",
+            "mundo": "mundo",
+            "banco": "bank",
+            "ciudad": "city"
+          }]
         },
-
         {
           "title": "Virginia is the number 1 seed in March Madness",
           "body": "Virginia (23-2), Villanova (23-2), Xavier (23-3) and Purdue (23-4) would get No. uno seeds if the NCAA men's basketball tournament started domingo, according to a bracket preview released by the selection committee. Virginia would be the No. 1 overall seed, despite its overtime fracaso to Virginia Tech on Saturday.",
           "interest": "Sports",
-          "index": "2"
-        }
-      ]
-
-    {
-      "title": "Apple will offer repairs damaged Homepod cable for $29",
-      "body": "It turns out that Apple’s HomePod is caro to repair: an out-of-warranty device will run 80 por ciento of the cost of a new one at $279. Fortunately, the empresa will repair the device’s built in cord for $29 “in some instances,” according to 9to5Mac. 9to5Mac viewed an internal memo sent to tiendas and authorized service providers, which inclues directions for empleados to diagnose issues, and to make sure that the device hasn’t been damaged by the user. ",
-      "interest": "Technology",
-      "index": "1"
-    },
-  },
-  {
-      "fooddrink": [
-          {
-            "title": "KFC is giving our Scratch and Sniffs that smell like chicken",
-            "body": "Remember how in escuela, we used to give out Valentine's Day cards and candy to everybody in clase? Now that we're grown up, nobody spreads the amor anymore, sadly. KFC is giving us a chance to relive our childhood, though, with some hilariously nostalgic scratch n sniff Valentines that yes, smell like pollo.",
-            "interest": "Food",
-            "index": "1"
-          },
-          {
-            "title": "McDonald's free meals at the Olympics",
-            "body": "Olympic athletes already have bodies in peak condition and talentos that allow them competir on the world’s grandest sporting escenario. As if that weren’t enough to make the rest of us celoso, this year’s winter Olympians get to indulge in complimentary Big Macs, too. McDonald’s has set up dos temporary outposts that are catering to competitors and fans in South Korea for the Pyeongchang games.",
-            "interest": "Food",
-            "index": "2"
-          }
-      ]
-  },
-  {
-      "news" : [
-        {
-        "title": "Why are peope dying from the flu?",
-        "body": "As far as flu seasons go, experts are saying the levels of visits to hospitals and emergency cuartos for this one are comparable to the 2009 swine flu. As such, reports of otherwise healthy or joven people dying from the infection are flying around. The cuentos have been shocking, especially because many of these people were fuera the high-risk grupos for flu-related death that include pregnant mujeres, small children and the elderly.",
-        "interest": "News",
-        "index": "1"
+          "index": "2",
+          "words": [{
+            "uno": "one",
+            "domingo": "Sunday",
+            "fracaso": "failure"
+          }]
         },
         {
+          "title": "Inside the 24 hours that changed the Cavaliers' season",
+          "body": "In the 24 hours before Koby Altman pushed to completar the three deals that resurrected a season and reshaped a franquicia, the Cleveland Cavaliers general gerente sought a most elusive engagement: a sit-down with LeBron James. Before he shared the framework of possible trades for Jordan Clarkson, Larry Nance Jr., Rodney Hood, George Hill and DeAndre Jordan last Wednesday, Altman prefaced his visita with the unmistakable verdad that nothing the front office could do mattered much until James had re-engaged on the court. James had been enojado, brooding and playing with an indifference that Altman hadn't witnessed in their three-plus years juntos in Cleveland.", 
+          "interest": "Sports",
+          "index": "3",
+          "words": [{
+            "completar": "to complete",
+            "franquicia": "franchise",
+            "gerente": "manager",
+            "visita": "visit",
+            "verdad": "truth",
+            "enojado": "angry", 
+            "juntos": "together"
+          }]
+        },
+        {
+          "title": "What separates the 2018 Celtics from the 2008 Celtics?" ,
+          "body": "Brian Scalabrine would have ninguna of the suggestion. Después key miembros of Boston Celtics' 2007-08 title squad reconvened Sunday en Boston for Paul Pierce's jersey number retirement ceremonia at TD Garden, Scalabrine was sought out responder whether the 2017-18 Celtics had any similarities to the championship team of a década ago. 'First of all, let me preface this: No team was like the 2008 championship team,'' Scalabrine said. 'I'm telling you, I've been a parte of this league for a largo time now and that was so unique. That team was like no otro team I've ever been around.'", 
+          "interest": "Sports",
+          "index": "4",
+          "words": [{
+            "ninguna": "none",
+            "Después": "after",
+            "miembros": "members",
+            "en": "in",
+            "ceremonia": "ceremony",
+            "responder": "to answer",
+            "parte": "part",
+            "largo": "long",
+            "otro": "other"        
+          }]
+        },
+        {
+          "title": "Shuan White lands spectacular first run and wins gold",
+          "body": "Cuando the presión was on, Shaun White landed the run that had haunted him for meses, threw his manos into the air and tossed his helmet into the multitud. He didn't espere to see his score to let the emotion of the day overtake him. That's the image that will remained burned into the mente of anyone who witnessed White's historic performance Wednesday afternoon: the three-time Olympic oro medalist, cabeza in hands, tears streaking his cheeks, humbled and human at the bajo of the halfpipe.",
+          "interest": "Sports",
+          "index": "5",
+          "words": [{
+            "Cuando": "When",
+            "presión": "pressure",
+            "meses": "months",
+            "manos": "hands",
+            "multitud": "crowd",
+            "espere": "wait",
+            "mente": "mind",
+            "oro": "gold",
+            "cabeza": "head",
+            "bajo": "bottom"
+          }]
+        }
+      ]
+    },
+    {
+      "fooddrink": [{
+          "title": "KFC is giving our Scratch and Sniffs that smell like chicken",
+          "body": "Remember how in escuela, we used to give out Valentine's Day cards and candy to everybody in clase? Now that we're grown up, nobody spreads the amor anymore, sadly. KFC is giving us a chance to relive our childhood, though, with some hilariously nostalgic scratch n sniff Valentines that yes, smell like pollo.",
+          "interest": "Food",
+          "index": "1",
+          "words": [{
+            "escuela": "school",
+            "clase": "class",
+            "amor": "love",
+            "pollo": "chicken"
+          }]
+        },
+        {
+          "title": "McDonald's free meals at the Olympics",
+          "body": "Olympic athletes already have bodies in peak condition and talentos that allow them competir on the world’s grandest sporting escenario. As if that weren’t enough to make the rest of us celoso, this year’s winter Olympians get to indulge in complimentary Big Macs, too. McDonald’s has set up dos temporary outposts that are catering to competitors and fans in South Korea for the Pyeongchang games.",
+          "interest": "Food",
+          "index": "2",
+          "words": [{
+            "talentos": "talents",
+            "competir": "to compete",
+            "escenario": "stage",
+            "celoso": "jealous",
+            "dos": "two" 
+          }]
+        },
+        {
+          "title": "Rose Gold Churros Are The Latest Addition To The Disney Food Trend",
+          "body": "Disneyland and Disneyworld ambos have begun utilizing the Instagram-beloved color in their comidas. This is in response to how well the trend has done in their apparel department. Rose Gold Minnie Ears and Spirit Jerseys, for ejemplo, voló off the shelves like loco when they debuted pasado year. Disneyworld's got their own lineup of rose gold postres that began popping up last month, including a cupcake featuring the Minnie Ears that people can't get enough of. These new churros aim continuar that success at Disneyland, where the Strawberry Rose Gold Churros can be found at the Castle Churro Cart just outside of the legendary castle.", 
+          "interest": "Food",
+          "index": "3",
+          "words": [{
+            "ambos": "both",
+            "comidas": "foods",
+            "ejemplo": "example",
+            "voló": "flew",
+            "loco": "crazy",
+            "pasado": "past",
+            "postres": "dessert",
+            "continuar": "to continue",
+            "castillo": "castle"
+          }]
+        },
+        {
+          "title": "Taco Bell CEO leaves for Chipotle, will try to revive struggling brand",
+          "body": "Niccol is essentially a superstar in the QSR world, especialmente with how he's grown Taco Bell into the youthful, trendy marca that it is today. He'll look to do the mismo at Chipotle, banking on social media and innovation to right the barco. At the same time, food seguridad will be one of Niccol's paramount concerns when he takes the Chipotle helm on March 5th. While most fast food chains are known for limpio, safe food, Chipotle has been anything but, with multiple brotes plaguing them over the past few years. Niccol will be looking to his experience at Taco Bell ayudar cure some of those food poisoning concerns. The stock mercados had closed when the news initially broke, but Google Finance is already projecting Chipotle's stock price to jump by at least 30 points as a result of the Wall Street Journal piece.",
+          "interest": "Food",
+          "index": "4",
+          "words": [{
+            "especialmente": "especially",
+            "marca": "brand",
+            "mismo": "same",
+            "barco": "ship",
+            "seguridad": "safety",
+            "limpio": "clean",
+            "brotes": "outbreaks",
+            "ayudar": "to help",
+            "mercados": "markets"
+          }]
+        },
+        {
+          "title": "Lavar Ball is bringing BBB branded water bottle to the US Market",
+          "body": "LaVar Ball, the Kris Jenner of basketball, is jumping into the food world with his latest business riesgo: Big Baller bottled agua. According to FreshSportsTalk, Big Baller Brand is teaming up with Lithuanian-based Birstonas Mineral Water distribuir BBB branded bottles to the Estados Unidos. Currently, nobody in the NBA has advertising campaigns with a bottled water firm, the closest being Steph Curry with Brita water filters. Ball espera to cash in big as he ventures into the niche territorio of bottled water marketing. There's no specific timetable yet as to when the Big Baller bottled water will make it to the United States. When this venture does begin, though, it'll be interesante to see whether it rises to stardom like Lonzo o messes up and falls flat like LiAngelo.", 
+          "interest": "Food",
+          "index": "5",
+          "words": [{
+            "riesgo": "venture",
+            "agua": "water",
+            "distribuir": "to distribute",
+            "Estados Unidos": "United States",
+            "espera": "wait",
+            "territorio": "territory",
+            "interesante": "interesting",
+            "o": "or"
+          }]
+        }
+      ]
+    },
+    {
+      "news": [{
           "title": "Trump's budget will wrestle with new deficits",
           "body": "The 2019 presupuesto that President Trump will enviar to Congress Monday will attempt to 'bend the trajectory down' on trillion-dollar budget deficits — even after Trump agreed eliminar the spending caps in a budget deal last week, White House budget director Mick Mulvaney dije Sunday. 'Just because this deal was signed does not mean the futuro is written in stone. We do have a chance still cambiar this trajectory and that's what the budget will show,' Mulvaney told Fox News Sunday. ",
           "interest": "News",
-          "index": "2"
-        }
-      ]
-  },
-  {
-    "music": [
-    {
-      "title": "Justin Timberlake rides Super Bowl to Number One",
-      "body": "Justin Timberlake went from the Super Bowl halftime programa to the top of the Billboard 200 as the singer's nuevo album Hombre of the Woods opened at Number One with the best-selling semana of 2018 so far. Man of the Woods opened with 293,000 total copias, including 242,000 traditional copies, in its first week on shelves, a periodo highlighted by Timberlake's hits-filled, Prince-honoring halftime spectacle at Super Bowl LII in Minneapolis.",
-      "interest": "Music",
-      "index": "1"
-    },
-    {
-      "title": "Google is trying to stop deception in music ticket sales",
-      "body": "Buying concert boletos online has siempre been a bit of a headache, pero it looks like Google is trying to make things more straightforward. This week, the company announced plans to adjust how resellers are ranked in its AdWords algorithm, as well as new rules that ban a number of deceptive sites and requiere more transparency from sites como StubHub y Viagogo. According to Billboard, ticket resellers won’t be able to “imply or lead clientes to think their site is the primary point of sale for tickets.”",
-      "interest": "Music",
-      "index": "2"
-    }
-    ]
-  },
-  {
-    "healthfitness" : [
-        {
-        "title": "How long should I wait after a cold to go out",
-        "body": "But should you skip out on all the divertido just because a cold or the flu has left you feeling a little under the clima? As long as you’re not sweating bullets with a fiebre and come armed with a pocketful of Ricola drops in case you break out in a coughing fit, it can’t do any harm to join the fiesta, right? Even though you might feel better, it doesn’t mean you are better, and even though you mean well, you’re spreading no joy by spreading your germs around. Simply put, “you should consider yourself contagious if you still feel under the weather,”",
-        "interest": "Health",
-        "index": "1"
+          "index": "1",
+          "words": [{
+            "presupuesto": "persuading",
+            "enviar": "submit",
+            "eliminar": "remove",
+            "dije": "said",
+            "futuro": "future",
+            "cambiar": "change"
+          }]
         },
         {
-        "title": "How to eat fruit for weight loss",
-        "body": "Here's some good news if you love berries, pears, and manzanas: Ditching fruit isn’t necessary to lose weight. It’s also not inteligente. Yes, fruit contains carbs and naturally-occurring sugar. But there are important reasons to make fruit a daily staple in your dieta, even when you're working to slim down.  The key is comer it strategically. Doing so can actually ayuda you shed pounds. Natural substances in fruit—including vitamins, minerals, antioxidants, fiber, and prebiotics—are incredibly bueno for you, not just in terms of protecting against chronic diseases, but also for managing your weight. Even if you eat plenty of verduras, nixing frutas means missing out on the unique antioxidants they provide",
-        "interest": "Health",
-        "index": "2"
-      },
-    ]
-  },
-  {
-    "technology": [
-     {
-      "title": "Google says pets are driving car searches",
-      "body": "Coche companies might want to spend more tiempo thinking about building features for dogs and gatos into their new vehicles: dog hammocks and other pet-friendly accesorios are among the top searches consumers make para their vehicles in the US, according to findings released today in Google’s 2018 Auto Trends Report.", 
-      "interest": "Technology",
-      "index": "2"
+          "title": "Why are peope dying from the flu?",
+          "body": "As far as flu seasons go, experts are saying the levels of visits to hospitals and emergency cuartos for this one are comparable to the 2009 swine flu. As such, reports of otherwise healthy or joven people dying from the infection are flying around. The cuentos have been shocking, especially because many of these people were fuera the high-risk grupos for flu-related death that include pregnant mujeres, small children and the elderly.",
+          "interest": "News",
+          "index": "2",
+          "words": [{
+            "cuartos": "rooms",
+            "joven": "young",
+            "cuentos": "stories",
+            "fuera": "outside",
+            "mujeres": "women"
+          }]
+        },
+        {
+          "title": "George Washington's hair found in New York college library book",
+          "body": "Archivists at a New York college biblioteca stumbled upon an intimate artefacto of George Washington — a lock of his iconic grey pelo, tucked in an 18th-siglo almanac. The rare find has Schenectady's Union College revisiting its relationship with the first presidente of the United States as historians wonder how the hair made it there. Historical records proyecto archivist Daniel Michelson found the almanaque atop a bookshelf at the college's Schaffer Library. The leather-bound libro, titled Gaines Universal Register or American and British Kalendar for the año 1793, includes population estimates of the American colonies.",
+          "interest": "News",
+          "index": "3",
+          "words": [{
+            "biblioteca": "library",
+            "artefacto": "artifact",
+            "pelo": "hair",
+            "siglo": "century",
+            "presidente": "president",
+            "proyecto": "project",
+            "almanaque": "almanac",
+            "libro": "book",
+            "año": "year"
+          }] 
+        },
+        {
+          "title": "Trump's parade could cost up to 30 million dollars",
+          "body": "President Trump's massive military desfile could cost tens of millions of dolares, according to the White House budget director. Durante an appearance before the House Budget Committee on miércoles to defend the administration's $4.4 trillion budget request, Mick Mulvaney estimated the precio tag for a military parade in the nation's capital would fall entre $10 million and $30 million, depending on the size, scope and longitud of the affair. ",
+          "interest": "News",
+          "index": "4",
+          "words": [{
+            "desfile": "parade",
+            "dolares": "dollars",
+            "Durante": "During",
+            "miércoles": "Wednesday",
+            "precio": "price",
+            "entre": "between",
+            "logitud": "length"
+          }]
+        },
+        {
+          "title": "VA Secretary David Shulkin regrets travel errors, reimburses government for wife's airfare",
+          "body": "Veterans Affairs Secretary David Shulkin said he regrets mistakes he and others made during viaje planning and ética clearance processes that led to findings by the VA inspector general that he had misused taxpayer recursos during a European trip last year. The inspector general encontró Shulkin improperly accepted Wimbledon tickets and taxpayer-funded airfare for his esposa for the diez-day trip in julio, and he and his chief of staff misled VA ethics officials mientras seeking official approval for the tickets and flights.",
+          "interest": "News",
+          "index": "5",
+          "words": [{
+            "viaje": "travel",
+            "ética": "ethics",
+            "recursos": "resources",
+            "encontró": "found",
+            "esposa": "wife",
+            "diez": "ten",
+            "julio": "July",
+            "mientras": "while"
+          }]
+        }
+      ]
     },
     {
-      "title": "Snapchat is now selling merchandise in its app",
-      "body": "Snapchat has dabbled in merchandise antes, with branded towels, backpacks, and the infamous dancing perro caliente costume. But now the company is taking things a paso further with a full-fledged merch store. Accessible on the Discover tab of the app, the Snapchat store tiene Snap-themed items like a plush version of the dancing hot dog ($19.99, con posable arms and a removable bun), a fuego emoji Snap streak hat ($29.99), a Winkface sweatshirt ($49.99), dog lens tee ($29.99), and a “Bring back best friends” sweatshirt ($49.99).",
-     "interest": "Technology",
-      "index": "3"
+      "music": [{
+          "title": "Justin Timberlake rides Super Bowl to Number One",
+          "body": "Justin Timberlake went from the Super Bowl halftime programa to the top of the Billboard 200 as the singer's nuevo album Hombre of the Woods opened at Number One with the best-selling semana of 2018 so far. Man of the Woods opened with 293,000 total copias, including 242,000 traditional copies, in its first week on shelves, a periodo highlighted by Timberlake's hits-filled, Prince-honoring halftime spectacle at Super Bowl LII in Minneapolis.",
+          "interest": "Music",
+          "index": "1",
+          "words": [{
+            "programa": "program",
+            "nuevo": "new",
+            "copias": "copies",
+            "periodo": "period",
+            "Hombre": "Man",
+            "semana": "week"
+          }]
+        },
+        {
+          "title": "Google is trying to stop deception in music ticket sales",
+          "body": "Buying concert boletos online has siempre been a bit of a headache, pero it looks like Google is trying to make things more straightforward. This week, the company announced plans to adjust how resellers are ranked in its AdWords algorithm, as well as new rules that ban a number of deceptive sites and requiere more transparency from sites como StubHub y Viagogo. According to Billboard, ticket resellers won’t be able to “imply or lead clientes to think their site is the primary point of sale for tickets.”",
+          "interest": "Music",
+          "index": "2",
+          "words": [{
+            "boletos": "tickets",
+            "siempre": "always",
+            "pero": "but",
+            "requiere": "requires",
+            "como": "as"
+          }]
+        },
+        {
+          "title": "'Black Panther' Soundtrack's First Week Forecast Grows Bigger, Still Heading for No. 1 Debut",
+          "body": "Black Pantera: The Album is ya on its way to No. 1 on the Billboard 200 gráfico, but ahora industry prognosticators predict the album will start with an even larger figura than initially forecast. The conjunto may now earn over 150,000 equivalente album units in the week ending Feb. quince -- up from the set’s earlier forecast of 100,000 (on Feb. doce). The soundtrack -- released on Feb. 9 via Top Dawg/Aftermath/Interscope Records -- features music from and inspired by the new Marvel Studios película Black Panther, which opens in teatros on Feb. 16. The Billboard 200 chart ranks the most popular albums of the week based on multi-metric consumption, which includes traditional album ventas, track equivalent albums (TEA) and streaming equivalent albums (SEA). The top 10 of the new Feb. 24, 2018-dated Billboard 200 chart (where Black Panther will likely debut at No. 1) is scheduled to be revealed on Billboard’s sitios web on Sunday, Feb. 18.",
+          "interest": "Music", 
+          "index": "3",
+          "words": [{
+            "Pantera": "Panther",
+            "ya": "already",
+            "gráfico": "chart",
+            "ahora": "now",
+            "figura": "figure",
+            "conjunto": "set",
+            "equivalent": "equivalent",
+            "quince": "15",
+            "doce": "12",
+            "película": "film",
+            "teatros": "theaters",
+            "ventas": "sales",
+            "sitios web": "web sites" 
+          }]
+        },
+        {
+          "title": "Justin Timberlake Rules Billboard Artist 100 Chart for First Time",
+          "body": "The Artist cien, which launched in July 2014 (nearly a year after Timberlake's previous album, The 20/20 Experience), measures artist activity across key metrics de music consumption, blending album and track sales, radio airplay, streaming and social media aficionado interaction to provide a weekly multi-dimensional clasificación of artist popularidad. Man of the Woods debuts at No. 1 on the Billboard 200 with 293,000 equivalent album units in the week ending Feb. 8, according to Nielsen Music, scoring him his fourth straight, and total, No. 1. Also aiding his perfil in the tracking week was his Super Bowl LII halftime show performance on Feb. 4. Album sales contribute the mayoria of Timberlake's Artist 100 points (74 percent), followed by digital canción sales (14 percent).", 
+          "interest": "Music",
+          "index": "4",
+          "words": [{
+            "cien": "100",
+            "de": "of",
+            "aficionado": "fan",
+            "clasificación": "ranking",
+            "popularidad": "popularity",
+            "perfil": "profile",
+            "mayoria": "majority",
+            "canción": "song"
+          }]
+        },
+        {
+          "title": "Luis Fonsi & Daddy Yankee's 'Despacito' Breaks Hot Latin Songs Record for Most Weeks at No. 1",
+          "body": "The Justin Bieber-assisted smash reigns for a 42nd week, passing Enrique Iglesias' 'Bailando.' Luis Fonsi and Daddy Yankee's 'Despacito,'' presentando Justin Bieber, claims the all-longevity mark encima Billboard's Hot Latin Songs chart all to itself, as the song califica a record-breaking 42nd week a No. 1 on the ranking dated Feb. 17. The hit supera the 41-week reign of Enrique Iglesias' 'Bailando,' featuring Descemer Bueno and Gente de Zona, in 2014-15. Erika Ender, one of the seis writers of 'Despacito,' tells Billboard of the hazaña, 'This song has been so unpredictable and so asombrosamente wonderful, as are the spontaneous and authentic emotions for those who are able to connect, with any heart and in any idioma. I'm happy for this new record for Latin music.'",
+          "interest": "Music",
+          "index": "5",
+          "words": [{
+            "presentando": "featuring",
+            "encima": "atop",
+            "califica": "scores",
+            "a": "at",
+            "supera": "surpasses",
+            "seis": "six",
+            "hazaña": "feat",
+            "asombrosamente": "surprisingly",
+            "idioma": "language"
+          }]
+        }
+      ]
     },
-
-    ]
-  }
+    {
+      "healthfitness": [{
+          "title": "How long should I wait after a cold to go out",
+          "body": "But should you skip out on all the divertido just because a cold or the flu has left you feeling a little under the clima? As long as you’re not sweating bullets with a fiebre and come armed with a pocketful of Ricola drops in case you break out in a coughing fit, it can’t do any harm to join the fiesta, right? Even though you might feel better, it doesn’t mean you are better, and even though you mean well, you’re spreading no joy by spreading your germs around. Simply put, you should consider yourself contagious if you still feel under the weather",
+          "interest": "Health",
+          "index": "1",
+          "words": [{
+            "divertido": "funny",
+            "clima": "weather",
+            "fiebre": "fever",
+            "fiesta": "party"
+          }]
+        },
+        {
+          "title": "How to eat fruit for weight loss",
+          "body": "Here's some good news if you love berries, pears, and manzanas: Ditching fruit isn’t necessary to lose weight. It’s also not inteligente. Yes, fruit contains carbs and naturally-occurring sugar. But there are important reasons to make fruit a daily staple in your dieta, even when you're working to slim down.  The key is comer it strategically. Doing so can actually ayuda you shed pounds. Natural substances in fruit—including vitamins, minerals, antioxidants, fiber, and prebiotics—are incredibly bueno for you, not just in terms of protecting against chronic diseases, but also for managing your weight. Even if you eat plenty of verduras, nixing frutas means missing out on the unique antioxidants they provide",
+          "interest": "Health",
+          "index": "2",
+          "words": [{
+            "manzanas": "apples",
+            "inteligente": "intelligent",
+            "dieta": "diet",
+            "comer": "eat",
+            "ayuda": "help",
+            "bueno": "good",
+            "verduras": "vegetables",
+            "frutas": "fruits"
+          }]
+        },
+        {
+          "title": "The Flu is Killing Up to 4,000 Americans a Week",
+          "body": "The cantidad of influenza ravaging the U.S. este year rivals levels normalmente seen when an altogether new virus emerges, decimating a vulnerable population that hasn’t had a oportunidad to develop any defensas. It’s an unexpected fenómeno that public salud experts are still trying to decode. The niveles of influenza-like illnesses being reported now are as high as the peak of the swine gripe epidemic in 2009, and exceed the last severe seasonal flu outbreak in 2003 when a new strain started circulating, said Anne Schuchat, the U.S. Centros for Disease Control and Prevention’s acting director. Swine flu, which swept the globo in 2009 and 2010, sickened 60.8 million Americans, hospitalized 274,304 and killed 12,469, conforme to CDC data. Muertes from the current outbreak will likely far outstrip those of the 2009-2010", 
+          "interest": "Health",
+          "index": "3",
+          "words": [{
+            "cantidad": "amount",
+            "este": "this",
+            "normalmente": "normally",
+            "oportunidad": "opportunity",
+            "defensas": "defenses",
+            "fenómeno": "phenomenon",
+            "salud": "health",
+            "niveles": "levels",
+            "gripe": "flu",
+            "Centros": "Centers",
+            "globo": "globe",
+            "conforme": "according",
+            "Muertes": "Deaths"
+          }]
+        },
+        {
+          "title": "Can You Get the Flu Twice in One Season?",
+          "body": "There's mucho of time during flu season to esquivar germs. Influenza actividad peaks from December to February, pero it can fácilmente stretch from November (or earlier) to March (or later). So if you had the flu already this year, you might feel like al menos you got your turn out of the way. Excepto it doesn't exactly work that way. During these long flu season months, you could get the flu a second time. Yep, really. That’s because—stay with nosotros here—there are cuatro different types of the flu: influenza A, B, C, and D. Influenza A and influenza B cause the seasonal epidemics we've come to expect in the fall and invierno, and hay different strains of each. When you get enfermos from one particular strain of flu virus, your body develops an immune response that will protect you from getting re-infected with the very same bug.", 
+          "interest": "Health",
+          "index": "4",
+          "words": [{
+            "mucho": "a lot",
+            "esquivar": "to dodge",
+            "actividad": "activity",
+            "pero": "but",
+            "fácilmente": "easily",
+            "al menos": "at least",
+            "Excepto": "Except",
+            "nosotros": "us",
+            "cuatro": "four",
+            "invierno": "winter",
+            "hay": "there are",
+            "enfermos": "sick"
+          }]
+        },
+        {
+          "title": "Shining a Deadly New Light on Airborne Flu Virus",
+          "body": "As a particularly asqueroso flu season rages across the United States, científicos have found a powerful new disinfectant that makes 'light' trabajo of the virus. Researchers say a cierto spectrum of ultraviolet luz -- called far-UVC -- easily kills airborne flu viruses while posing no risk to gente. It could offer a new, barato way to eliminate airborne flu viruses in indoor public spaces such as hospitals, doctors' oficinas, schools, aeropuertos and aircraft, said the team from Columbia University Medical Center in New York City. The disinfecting éxito of initial experiments still need to be confirmed, said lead research David Brenner. But he believes 'the uso of overhead, low-level far-UVC light in public locations would be a safe and eficiente method for limiting the transmission and spread of airborne-mediated microbial diseases, such as influenza and tuberculosis.'", 
+          "interest": "Health",
+          "index": "5",
+          "words": [{
+            "asqueroso": "nasty",
+            "científicos": "scientists",
+            "trabajo": "work",
+            "cierta": "certain",
+            "luz": "light",
+            "gente": "people",
+            "barato": "inexpensive",
+            "oficinas": "offices",
+            "aeropuertos": "airports",
+            "éxito": "success",
+            "uso": "use",
+            "eficiente": "efficient"
+          }]
+        }
+      ]
+    },
+    {
+      "technology": [{
+          "title": "Apple will offer repairs damaged Homepod cable for $29",
+          "body": "It turns out that Apple’s HomePod is caro to repair: an out-of-warranty device will run 80 por ciento of the cost of a new one at $279. Fortunately, the empresa will repair the device’s built in cord for $29 “in some instances,” according to 9to5Mac. 9to5Mac viewed an internal memo sent to tiendas and authorized service providers, which incluye directions for empleados to diagnose issues, and to make sure that the device hasn’t been damaged by the user. ",
+          "interest": "Technology",
+          "index": "1",
+          "words": [{
+            "caro": "expensive",
+            "por ciento": "percent",
+            "empresa": "company",
+            "tiendas": "shops",
+            "incluye": "includes",
+            "empleados": "employees" 
+          }]
+        },
+        {
+          "title": "Google says pets are driving car searches",
+          "body": "Coche companies might want to spend more tiempo thinking about building features for dogs and gatos into their new vehicles: dog hammocks and other pet-friendly accesorios are among the top searches consumers make para their vehicles in the US, according to findings released today in Google’s 2018 Auto Trends Report.",
+          "interest": "Technology",
+          "index": "2",
+          "words": [{
+            "Coche": "car",
+            "tiempo": "weather",
+            "gatos": "cats",
+            "accesorios": "accessories",
+            "para": "for"
+          }]
+        },
+        {
+          "title": "Snapchat is now selling merchandise in its app",
+          "body": "Snapchat has dabbled in merchandise antes, with branded towels, backpacks, and the infamous dancing pancho costume. But now the company is taking things a pequeno further with a full-fledged merch store. Accessible on the Discover tab of the app, the Snapchat store tiene Snap-themed items like a plush version of the dancing hot dog ($19.99, con posable arms and a removable bun), a fuego emoji Snap streak hat ($29.99), a Winkface sweatshirt ($49.99), dog lens tee ($29.99), and a “Bring back best friends” sweatshirt ($49.99).",
+          "interest": "Technology",
+          "index": "3",
+          "words": [{
+            "antes": "before",
+            "pancho": "hot dog",
+            "pequeno": "little",
+            "tiene": "has",
+            "con": "with",
+            "fuego": "fire"
+          }]
+        },
+        {
+          "title": "Magic Leap promises live-streamed holograms within five years",
+          "body": "Ayer, Magic Leap CEO Rony Abovitz and NBA commissioner Adam Silver announced planes to finalmente bring Turner-owned NBA content to Magic Leap’s elusive AR gafas de protección, by casting virtual pantallas in front of a wearer’s cara through the goggles. It wasn’t an earth-shattering anuncio, but it was an indication que Magic Leap’s tech could be más than billion-dollar vaporware, and that the company is pensando sobre the kind of content needed to convince people to vestir light-field face computadoras. What’s more interesting is that Abovitz believes volumetric video — a way of capturing video as 3D objects and scenes — will be live-streamed to people’s faces within a relatively corto period of time, and that the kind of cameras used hacer this happen will eventually replace traditional broadcast cameras.", 
+          "interest": "Technology",
+          "index": "4",
+          "words": [{
+            "Ayer": "Yesterday",
+            "planes": "plans",
+            "finalmente": "finally",
+            "gafas de protección": "goggles",
+            "pantallas": "screens",
+            "cara": "face",
+            "anuncio": "announcement",
+            "que": "that",
+            "más": "more",
+            "pensando": "thinking",
+            "sobre": "about",
+            "vestir": "to wear",
+            "computadoras": "computers",
+            "corto": "short",
+            "hacer": "to make"
+          }]        
+        },
+        {
+          "title": "There could be an entire line of Dyson electric cars",
+          "body": "Mejor known for slick-looking vacuum liampadores and hand dryers, James Dyson has already stated his intentions to tackle a completamente different máquina — the electric car. Now, sin embargo, the inventor is looking construir more than just a niche model as the lista of EV models on sale grows. Dyson is planning a trio of new EVs for the next decade that will also adopt a solid-state battery paquete, the Financial Times reported Wednesday, embarking on an estimated $2.8 billion project dar an Elon Musk-like sacudida to the automotive market. The man behind radically designed appliances said in septiembre he was planning a “radically different” tipo of electric car than what was on the market. Like Musk, the primo car due temprano next decade would be a high-end model (but not a sports car) and be sold in relatively pequeño numbers.",
+          "interest": "Technology",
+          "index": "5",
+          "words": [{
+            "Mejor": "Best",
+            "liampadores": "cleaners",
+            "completamente": "completely",
+            "máquina": "machine",
+            "sin embargo": "however",
+            "construir": "build",
+            "lista": "list",
+            "paquete": "pack",
+            "dar": "to give",
+            "sacudida": "jolt",
+            "septiembre": "September",
+            "tipo": "type",
+            "primo": "type",
+            "temprano": "early",
+            "pequeño": "small"
+          }]
+        }
+      ]
+    }
   ]
 }

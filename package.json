@@ -14,8 +14,6 @@
   "dependencies": {
     "express": "3.x",
     "express3-handlebars": "*",
-    "file-system": "^2.2.2",
-    "jsonfile-updater": "^3.1.0",
     "mongodb": "*",
     "mongoose": "*"
   },

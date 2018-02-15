@@ -1,5 +1,5 @@
 var data = require('../Interests.json');
-var fs = require('file-system');
+var fs = require('fs');
 
 /*
  * GET Interests page.

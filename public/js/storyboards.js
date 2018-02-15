@@ -2,7 +2,6 @@ function init() {
   'use strict';
   return true;
 }
-var maxsize = 2;
 var index = 0;
 
 $(document).ready(function () {
@@ -17,6 +16,7 @@ $(document).ready(function () {
 
 
 
+
 function initializePage() {
   event.preventDefault();
   var usedstories = makeUsedStories();
@@ -24,54 +24,53 @@ function initializePage() {
   $("#text").empty();
   $("#text").append('<p> <em><strong> Word list: </strong></em> </p>');
   if (interest == "sports") {
-    $('.story p').text(usedstories.sports[++index % maxsize].body);
-    $('#titlestrong').text(usedstories.sports[index % maxsize].title);
-
-    Object.keys(usedstories.sports[index % maxsize].words[0]).forEach(function(key) {
-      $('#text').append('<p>' + key + ' : ' + usedstories.sports[index % maxsize].words[0][key] + '</p>');
+    $('.story p').text(usedstories.sports[++index % usedstories.sports.length].body);
+    $('#titlestrong').text(usedstories.sports[index % usedstories.sports.length].title);
+    Object.keys(usedstories.sports[index % usedstories.sports.length].words[0]).forEach(function(key) {
+      $('#text').append('<p>' + key + ' : ' + usedstories.sports[index % usedstories.sports.length].words[0][key] + '</p>');
     });
 
   }
   if (interest == "fooddrink") {
-    $('.story p').text(usedstories.fooddrink[++index % maxsize].body);
-    $('#titlestrong').text(usedstories.fooddrink[index % maxsize].title);
-    Object.keys(usedstories.fooddrink[index % maxsize].words[0]).forEach(function(key) {
-      $('#text').append('<p>' + key + ' : ' + usedstories.fooddrink[index % maxsize].words[0][key] + '</p>');
+    $('.story p').text(usedstories.fooddrink[++index % usedstories.fooddrink.length].body);
+    $('#titlestrong').text(usedstories.fooddrink[index % usedstories.fooddrink.length].title);
+    Object.keys(usedstories.fooddrink[index % usedstories.fooddrink.length].words[0]).forEach(function(key) {
+      $('#text').append('<p>' + key + ' : ' + usedstories.fooddrink[index % usedstories.fooddrink.length].words[0][key] + '</p>');
     });
   }
   if (interest == "news") {
-    $('.story p').text(usedstories.news[++index % maxsize].body);
-    $('#titlestrong').text(usedstories.news[index % maxsize].title);
-    Object.keys(usedstories.news[index % maxsize].words[0]).forEach(function(key) {
-      $('#text').append('<p>' + key + ' : ' + usedstories.news[index % maxsize].words[0][key] + '</p>');
+    $('.story p').text(usedstories.news[++index % usedstories.news.length].body);
+    $('#titlestrong').text(usedstories.news[index % usedstories.news.length].title);
+    Object.keys(usedstories.news[index % usedstories.news.length].words[0]).forEach(function(key) {
+      $('#text').append('<p>' + key + ' : ' + usedstories.news[index % usedstories.news.length].words[0][key] + '</p>');
     });
 
   }
   if (interest == "music") {
-    $('.story p').text(usedstories.music[++index % maxsize].body);
-    $('#titlestrong').text(usedstories.music[index % maxsize].title);
+    $('.story p').text(usedstories.music[++index % usedstories.music.length].body);
+    $('#titlestrong').text(usedstories.music[index % usedstories.music.length].title);
 
-    Object.keys(usedstories.music[index % maxsize].words[0]).forEach(function(key) {
-      $('#text').append('<p>' + key + ' : ' + usedstories.music[index % maxsize].words[0][key] + '</p>');
+    Object.keys(usedstories.music[index % usedstories.music.length].words[0]).forEach(function(key) {
+      $('#text').append('<p>' + key + ' : ' + usedstories.music[index % usedstories.music.length].words[0][key] + '</p>');
     });
 
 
   }
   if (interest == "healthfitness") {
-    $('.story p').text(usedstories.healthfitness[++index % maxsize].body);
-    $('#titlestrong').text(usedstories.healthfitness[index % maxsize].title);
+    $('.story p').text(usedstories.healthfitness[++index % usedstories.healthfitness.length].body);
+    $('#titlestrong').text(usedstories.healthfitness[index % usedstories.healthfitness.length].title);
 
-    Object.keys(usedstories.healthfitness[index % maxsize].words[0]).forEach(function(key) {
-      $('#text').append('<p>' + key + ' : ' + usedstories.healthfitness[index % maxsize].words[0][key] + '</p>');
+    Object.keys(usedstories.healthfitness[index % usedstories.healthfitness.length].words[0]).forEach(function(key) {
+      $('#text').append('<p>' + key + ' : ' + usedstories.healthfitness[index % usedstories.healthfitness.length].words[0][key] + '</p>');
     });
 
   }
   if (interest == "technology") {
-    $('.story p').text(usedstories.technology[++index % maxsize].body);
-    $('#titlestrong').text(usedstories.technology[index % maxsize].title);
+    $('.story p').text(usedstories.technology[++index % usedstories.technology.length].body);
+    $('#titlestrong').text(usedstories.technology[index % usedstories.technology.length].title);
 
-    Object.keys(usedstories.technology[index % maxsize].words[0]).forEach(function(key) {
-      $('#text').append('<p>' + key + ' : ' + usedstories.technology[index % maxsize].words[0][key] + '</p>');
+    Object.keys(usedstories.technology[index % usedstories.technology.length].words[0]).forEach(function(key) {
+      $('#text').append('<p>' + key + ' : ' + usedstories.technology[index % usedstories.technology.length].words[0][key] + '</p>');
     });
 
   }

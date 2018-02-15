@@ -1,5 +1,6 @@
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/interests.css">
@@ -21,31 +22,30 @@
 			<div class="row topmargin">
 				<form id="changeInterestForm" role="form" method="get" action="/changeinterest">
 					{{#each Interests}}
-					<div class="col-xs-4 form-group">
-						<i class="{{icon}}" style="font-size: 6em;"></i>
-						<p>{{name}}</p>
-						<label class="switch" for="{{id}}">
- 					 		<input type="checkbox" id="{{id}}" class="form-control" name="{{id}}" {{enabled}}>
-  							<span class="slider round"></span>
-						</label>
-					</div>
+						<div class="col-xs-4 form-group">
+							<i class="{{icon}}" style="font-size: 6em;"></i>
+							<p>{{name}}</p>
+							<label class="switch" for="{{id}}">
+	 					 		<input type="checkbox" id="{{id}}" class="form-control" name="{{id}}" {{enabled}}>
+	  						<span class="slider round"></span>
+							</label>
+						</div>
 					{{/each}}
 				</div>
 				<div class="row">
 					<div class="col-xs-6 backbtn">
-					<a type="button" class="btn btn-link btn-lg" href="/index">
-					<span class="glyphicon glyphicon-chevron-left"></span>
-					<span>Back</span>
-				</a>
+						<a type="button" class="btn btn-link btn-lg" href="/index">
+							<span class="glyphicon glyphicon-chevron-left"></span>
+							<span>Back</span>
+						</a>
+					</div>
+					<div class="col-xs-6">
+						<i class="fa fa-check-square lower" aria-hidden="true" style="font-size: 2em;"></i>
+						<input type="submit" id="submitBtn" class="btn btn-link btn-lg submitbtn" value="Confirm Interests">
+					</div>
+			 	</form>
 			</div>
-			<div class="col-xs-6">
-					<i class="fa fa-check-square lower" aria-hidden="true" style="font-size: 3em;"></i>
-					<input type="submit" id="submitBtn" class="btn btn-link btn-lg submitbtn" value="Confirm Interests">
-
-			 </form>
-			</div>
-	</div>
-
+		</div>
 	</div>
 </body>
 </html>

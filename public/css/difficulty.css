@@ -4,8 +4,7 @@
 }
 
 label.btn {
-	width:95%;
-
+	width: 95%;
 }
 
 input[type=checkbox]:checked + span {

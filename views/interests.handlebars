@@ -12,24 +12,20 @@
 </head>
 <body>
 	<div class="container">
-		<h1>
-			Interests
-		</h1>
-    <p>
-      Choose your interests to change what stories are displayed to you!
-    </p>
+		<h1>Interests</h1>
+    <p>Choose your interests to change what stories are displayed to you!</p>
 		<div class="container-fluid text-center grid">
 			<div class="row topmargin">
 				<form id="changeInterestForm" role="form" method="get" action="/changeinterest">
 					{{#each Interests}}
-						<div class="col-xs-4 form-group">
-							<i class="{{icon}}" style="font-size: 6em;"></i>
-							<p>{{name}}</p>
-							<label class="switch" for="{{id}}">
-	 					 		<input type="checkbox" id="{{id}}" class="form-control" name="{{id}}" {{enabled}}>
-	  						<span class="slider round"></span>
-							</label>
-						</div>
+					<div class="col-xs-4 form-group">
+						<i class="{{icon}}" style="font-size: 6em;"></i>
+						<p>{{name}}</p>
+						<label class="switch" for="{{id}}">
+ 					 		<input type="checkbox" id="{{id}}" class="form-control" name="{{id}}" {{enabled}}>
+  						<span class="slider round"></span>
+						</label>
+					</div>
 					{{/each}}
 				</div>
 				<div class="row">

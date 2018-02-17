@@ -6,7 +6,6 @@ var data = require('../stories.json');
 
 exports.view = function (req, res) {
   var words = getStories(data);
-  console.log(words);
   res.render('words', words);
 };
 

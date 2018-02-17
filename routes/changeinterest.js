@@ -12,6 +12,7 @@ exports.changeInterests = function (req, res) {
   var music = req.query.music;
   var healthfitness = req.query.healthfitness;
   var technology = req.query.technology;
+
   if (sports != 'on') data.Interests[0].enabled = null;
   else data.Interests[0].enabled = 'checked';
 

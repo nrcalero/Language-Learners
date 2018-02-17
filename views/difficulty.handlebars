@@ -10,20 +10,16 @@
 	</head>
 	<body>
 		<div class="container">
-			<h1>
-				Difficulty
-			</h1>
-	    <p>
-	      Pick one (or more) difficulties! If you left all difficulties not chosen, the default will be 'Easy'.
-	    </p>
+			<h1>Difficulty</h1>
+	    <p>Pick one (or more) difficulties! If you left all difficulties not chosen, the default will be 'Easy'.</p>
 			<div class="container-fluid">
 				<form id="changeDifficultyForm" role="form" method="get" action="/changedifficulty">
 					<div class="row">
 						<div class="btn-group" data-toggle="buttons">
 							{{#each Difficulty}}
-	  						<label class="btn {{btntype}}">
-	   					 		<input class="large" type="checkbox" name={{name}} id={{name}} autocomplete="off" {{enabled}}> <span class="larger"> {{name}} </span> <span class="smaller"> {{Description}} </span>
-	  						</label>
+  						<label class="btn {{btntype}}">
+   					 		<input class="large" type="checkbox" name={{name}} id={{name}} autocomplete="off" {{enabled}}> <span class="larger"> {{name}} </span> <span class="smaller"> {{Description}} </span>
+  						</label>
 	  					{{/each}}
 						</div>
 					</div>

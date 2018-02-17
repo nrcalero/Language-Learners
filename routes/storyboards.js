@@ -15,6 +15,5 @@ exports.view = function (req, res) {
   }
 
   var interestJSON = { Interests: interestlist };
-  console.log(interestJSON);
   res.render('storyboards', interestJSON);
 };

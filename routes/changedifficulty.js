@@ -10,8 +10,6 @@ exports.changeDifficulty = function (req, res) {
   var Medium = req.query.Medium;
   var Hard = req.query.Hard;
 
-  console.log(Easy + ' ' + Medium + ' ' + Hard);
-
   if (Easy != 'on') data.Difficulty[0].enabled = null;
   else data.Difficulty[0].enabled = 'checked';
 

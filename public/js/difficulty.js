@@ -13,6 +13,6 @@ $(document).ready(function () {
           else {
             mydata.Interests[0].enabled = null;
           }
-
     });
   });
+});

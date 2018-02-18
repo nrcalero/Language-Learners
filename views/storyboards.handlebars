@@ -13,14 +13,14 @@
 	</head>
 	<body>
 		<div class="container">
-			<h1>
-				Stories
-			</h1>
+			<h1>Stories</h1>
 			<p>
-				Choose an interest you specified and read up! Try figuring out what the word means from context, and you can always navigate to the word list for help.
+				Choose an interest you specified and read up!
+				Try figuring out what the word means from context,
+				and you can always navigate to the word list for help.
 			</p>
 			<div class="container">
-				<div id="overlay" onclick="off()"> 
+				<div id="overlay" onclick="off()">
 					<div id="text">
 					</div>
 				</div>
@@ -28,9 +28,8 @@
 					<div class="col-xs-6">
 						<p><strong>Story:</strong></p>
 					</div>
-						<div class="col-xs-6">
+					<div class="col-xs-6">
 						<select id="interests" onchange="initializePage()">
-
 							{{#each Interests}}
 							<option value={{id}}>{{name}}</option>
 							{{/each}}
@@ -39,6 +38,7 @@
 				</div>
 				<div class="row" id="titlediv"> 
 					<p><em><strong class="storytitle" id="titlestrong"></strong></em></p>
+
 				</div>
 				<div class="row">
 					<div class="container story">

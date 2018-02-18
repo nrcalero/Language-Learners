@@ -8,15 +8,11 @@
 </head>
 <body>
 	<div class="container">
-		<h1>
-			Words
-		</h1>
-    <p>
-      Here is the complete list of words that you have learned.
-    </p>
+		<h1>Words</h1>
+    <p>Here is the complete list of words that you have learned.</p>
 		<div class="container vocab">
 			{{#each words}}
-				<p><strong>{{word}}</strong>: {{meaning}}</p>
+			<p><strong>{{word}}</strong>: {{meaning}}</p>
 			{{/each}}
 		</div>
 		<a type="button" class="btn btn-link btn-lg" href="/index">

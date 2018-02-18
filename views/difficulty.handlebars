@@ -1,49 +1,43 @@
 <html>
-<head>
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/difficulty.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/difficulty.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<title>Language Learners</title>
-</head>
-<body>
-	<div class="container">
-		<h1>
-			Difficulty
-		</h1>
-    <p>
-      Pick one (or more) difficulties! If you left all difficulties not chosen, the default will be 'Easy'.
-    </p>
-		<div class="container-fluid">
-			<form id="changeDifficultyForm" role="form" method="get" action="/changedifficulty">
-
-			<div class="row">
-				<div class="btn-group" data-toggle="buttons">
-					{{#each Difficulty}}
-
-  					<label class="btn {{btntype}}" >
-   					 <input class="large" type="checkbox" name={{name}} id={{name}} autocomplete="off" {{enabled}}> <span class="larger"> {{name}} </span> <span class="smaller"> {{Description}} </span>
-  					</label>
-  					{{/each}}
-				</div>
+		<title>Language Learners</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Difficulty</h1>
+	    <p>Pick one (or more) difficulties! If you left all difficulties not chosen, the default will be 'Easy'.</p>
+			<div class="container-fluid">
+				<form id="changeDifficultyForm" role="form" method="get" action="/changedifficulty">
+					<div class="row">
+						<div class="btn-group" data-toggle="buttons">
+							{{#each Difficulty}}
+  						<label class="btn {{btntype}}">
+   					 		<input class="large" type="checkbox" name={{name}} id={{name}} autocomplete="off" {{enabled}}> <span class="larger"> {{name}} </span> <span class="smaller"> {{Description}} </span>
+  						</label>
+	  					{{/each}}
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-1"> </div>
+						<div class="col-xs-4">
+							<a type="button" class="btn btn-link btn-lg" href="/index">
+								<span class="glyphicon glyphicon-chevron-left"></span>
+								<span>Back</span>
+							</a>
+						</div>
+						<div class="col-xs-6">
+							<i class="fa fa-check-square lower" aria-hidden="true" style="font-size: 3em;"></i>
+							<input type="submit" id="submitBtn" class="btn btn-link btn-lg submitbtn" value="Confirm Difficulty">
+						</div>
+					</div>
+	  		</form>
+			</div>
 		</div>
-		<div class="row">
-			<div class="col-xs-1"> </div>
-			<div class="col-xs-4">
-		<a type="button" class="btn btn-link btn-lg" href="/index">
-			<span class="glyphicon glyphicon-chevron-left"></span>
-			<span>Back</span>
-		</a>
-	</div>
-	<div class="col-xs-6">
-		<i class="fa fa-check-square lower" aria-hidden="true" style="font-size: 3em;"></i>
-		<input type="submit" id="submitBtn" class="btn btn-link btn-lg submitbtn" value="Confirm Difficulty">
-	</div>
-</div>
-  					</form>
-
-	</div>
-</div>
-</body>
+	</body>
 </html>

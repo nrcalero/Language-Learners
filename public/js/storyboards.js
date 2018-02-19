@@ -1,3 +1,4 @@
+
 function init() {
   'use strict';
   return true;
@@ -28,6 +29,8 @@ function initializePage() {
       ++index;
     }
     $('.story p').text(usedstories.sports[index % usedstories.sports.length].body);
+    usedstories.sports[index % usedstories.sports.length].read = "true";
+    console.log(usedstories.sports[index % usedstories.sports.length]);
     $('#titlestrong').text(usedstories.sports[index % usedstories.sports.length].title);
     Object.keys(usedstories.sports[index % usedstories.sports.length].words[0]).forEach(function (key) {
       $('#text').append('<p>' + key + ' : ' + usedstories.sports[index % usedstories.sports.length].words[0][key] + '</p>');

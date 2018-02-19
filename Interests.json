@@ -3,7 +3,7 @@
     {
       "name": "Sports",
       "icon": "fa fa-futbol-o",
-      "enabled": "checked",
+      "enabled": null,
       "id": "sports"
     },
     {
@@ -15,25 +15,25 @@
     {
       "name": "News",
       "icon": "fa fa-newspaper-o",
-      "enabled": "checked",
+      "enabled": null,
       "id": "news"
     },
     {
       "name": "Music",
       "icon": "fa fa-music",
-      "enabled": "checked",
+      "enabled": null,
       "id": "music"
     },
     {
       "name": "Health & Fitness",
       "icon": "fa fa-heartbeat",
-      "enabled": "checked",
+      "enabled": null,
       "id": "healthfitness"
     },
     {
       "name": "Technology",
       "icon": "fa fa-laptop",
-      "enabled": "checked",
+      "enabled": null,
       "id": "technology"
     }
   ]

@@ -2,12 +2,13 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/storyboard.css">
+		<link rel="stylesheet" href="css/materialize.css">
 		<script src="js/jquery-1.11.0.js"></script>
 		<script src="js/bootstrap.js"></script>
 		<script src="js/storyboards.js"></script>
+		<script src="js/materialize.js"></script>
 
 		<title>Language Learners</title>
 	</head>
@@ -25,44 +26,35 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-xs-6">
-						<p><strong>Story:</strong></p>
+					<div class="col s1 m2 offset-m2 ">
+						<h5><strong>Story:</strong></h5>
 					</div>
-					<div class="col-xs-6">
-						<select id="interests" onchange="initializePage()">
+					<div class="col s8 m5 offset-s3">
+						<select class="dropdown-button btn" id="interests" onchange="initializePage()">
 							{{#each Interests}}
-							<option value={{id}}>{{name}}</option>
+							<option class="dropdown-content" value={{id}}>{{name}}</option>
 							{{/each}}
 						</select>
 					</div>
 				</div>
  				<div class="row" id="titlediv"> 
+ 					<div class="col s11 m9 offset-m2 offset-s1">
 					<p><em><strong class="storytitle" id="titlestrong"></strong></em></p>
-
+					</div>
 				</div>
 				<div class="row">
 					<div class="container story">
 						<p>This is where the text will go. The text will consist of a story that relates to the topic of interest chosen above.</p>
 					</div>
 				</div>
-				<div class="row text-center">
-					<div class="col-xs-3">
-						<a type="button" class="btn btn-link btn-lg" href="/index">
-							<span class="glyphicon glyphicon-chevron-left"></span>
-							<span class="lowerbutton">Back</span>
-						</a>
-					</div>
-					<div class="col-xs-4" onclick="initializePage()">
-						<a id="next" type="button" class="btn btn-link btn-lg" href="#">
-							<span class="glyphicon glyphicon-book"></span>
-							<span class="lowerbutton">Next Story</span>
-						</a>
-					</div>
-					<div id="words" class="col-xs-2 popup" onclick="on()">
-						<a type="button" class="btn btn-link btn-lg" href="#">
-							<span class="glyphicon glyphicon-list-alt"></span>
-							<span class="lowerbutton">Word List</span>
-						</a>
+				<div class="row">
+					<div class="col s12"> 
+						<ul class="tabs"> 
+							<li class="tab col s5 m4" onclick="location.href='/index'"><a> Homepage </a></li>
+							<li class="tab col s5 m4" onclick="initializePage()"><a id="next" href="#"> 
+							Next Story </a></li>
+							<li class="tab col s5 m4 popup" onclick="on()"><a href="#"> Word List </a></li> 
+						</ul>
 					</div>
 				</div>
 			</div>

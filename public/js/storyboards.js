@@ -43,7 +43,7 @@ function initializePage() {
       if (usedstories.fooddrink[index % usedstories.fooddrink.length].difficulty == "medium" && difficulties[1] == true) break;
       if (usedstories.fooddrink[index % usedstories.fooddrink.length].difficulty == "hard" && difficulties[2] == true) break;
       ++index;
-    }    
+    }
     $('.story p').text(usedstories.fooddrink[index % usedstories.fooddrink.length].body);
     $('#titlestrong').text(usedstories.fooddrink[index % usedstories.fooddrink.length].title);
     Object.keys(usedstories.fooddrink[index % usedstories.fooddrink.length].words[0]).forEach(function (key) {
@@ -57,7 +57,7 @@ function initializePage() {
       if (usedstories.news[index % usedstories.news.length].difficulty == "medium" && difficulties[1] == true) break;
       if (usedstories.news[index % usedstories.news.length].difficulty == "hard" && difficulties[2] == true) break;
       ++index;
-    }    
+    }
     $('.story p').text(usedstories.news[index % usedstories.news.length].body);
     $('#titlestrong').text(usedstories.news[index % usedstories.news.length].title);
     Object.keys(usedstories.news[index % usedstories.news.length].words[0]).forEach(function (key) {
@@ -71,7 +71,7 @@ function initializePage() {
       if (usedstories.music[index % usedstories.music.length].difficulty == "medium" && difficulties[1] == true) break;
       if (usedstories.music[index % usedstories.music.length].difficulty == "hard" && difficulties[2] == true) break;
       ++index;
-    }    
+    }
     $('.story p').text(usedstories.music[index % usedstories.music.length].body);
     $('#titlestrong').text(usedstories.music[index % usedstories.music.length].title);
     Object.keys(usedstories.music[index % usedstories.music.length].words[0]).forEach(function (key) {
@@ -176,10 +176,10 @@ function setupDifficulty() {
   var difficulty = getDifficultyData();
   var difficulties = [];
   if (difficulty.Difficulty[0].enabled == "checked") difficulties[0] = true;
-  else difficulties[0] == false;
+  else difficulties[0] = false;
   if (difficulty.Difficulty[1].enabled == "checked") difficulties[1] = true;
-  else difficulties[1] == false;
+  else difficulties[1] = false;
   if (difficulty.Difficulty[2].enabled == "checked") difficulties[2] = true;
-  else difficulties[2] == false;
+  else difficulties[2] = false;
   return difficulties;
 }

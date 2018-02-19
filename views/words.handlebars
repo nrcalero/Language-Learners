@@ -4,15 +4,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/main.css">
+	<script src="js/words.js" charset="utf-8"></script>
 	<title>Language Learners</title>
 </head>
 <body>
 	<div class="container">
 		<h1>Words</h1>
     <p>Here is the complete list of words that you have learned.</p>
-		<div class="container vocab">
+		<form class="form-inline">
+			<input class="form-control mr-sm-2" onkeyup="changeWords()" type="search"
+			placeholder="Search for a Spanish word..." aria-label="Search" id="wordSearch">
+		</form>
+		<div id="words" class="container vocab">
 			{{#each words}}
-			<p><strong>{{word}}</strong>: {{meaning}}</p>
+			<p id={{word}}><strong>{{word}}:</strong> {{meaning}}</p>
 			{{/each}}
 		</div>
 		<a type="button" class="btn btn-link btn-lg" href="/index">

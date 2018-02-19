@@ -19,7 +19,7 @@ exports.changeDifficulty = function (req, res) {
   if (Hard != 'on') data.Difficulty[2].enabled = null;
   else data.Difficulty[2].enabled = 'checked';
 
-  if (Easy != '0n' && Medium != 'on' && Hard != 'on') data.Difficulty[0].enabled = 'checked';
+  if (Easy != 'on' && Medium != 'on' && Hard != 'on') data.Difficulty[0].enabled = 'checked';
   var json = JSON.stringify(data, null, 2);
   fs.writeFile('Difficulty.json', json);
 

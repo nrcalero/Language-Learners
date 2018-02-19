@@ -6,7 +6,7 @@
           "interest": "Sports",
           "index": "1", 
           "read": "false", 
-          "difficulty": "easy", 
+          "difficulty": "medium", 
           "words": [{
           	"para": "for",
           	"en": "on/in", 

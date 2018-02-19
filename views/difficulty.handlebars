@@ -12,29 +12,25 @@
 		<div class="container">
 			<h1>Difficulty</h1>
 	    <p>Pick one (or more) difficulties! If you left all difficulties not chosen, the default will be 'Easy'.</p>
-			<div class="container-fluid">
+			<div class="container-fluid text-center grid">
 				<form id="changeDifficultyForm" role="form" method="get" action="/changedifficulty">
 					<div class="row">
-						<div class="btn-group" data-toggle="buttons">
-							{{#each Difficulty}}
-  						<label class="btn {{btntype}}">
-   					 		<input class="large" type="checkbox" name={{name}} id={{name}} autocomplete="off" {{enabled}}> <span class="larger"> {{name}} </span> <span class="smaller"> {{Description}} </span>
-  						</label>
-	  					{{/each}}
-						</div>
+						{{#each Difficulty}}
+						<div class="col-xs-4 form-group">
+						<h2>{{name}}</h2>
+						<p>{{Description}}</p>
+						<label class="switch" for="{{name}}">
+ 					 		<input type="checkbox" id="{{name}}" class="form-control" name="{{name}}" {{enabled}}>
+  						<span class="slider round"></span>
+						</label>
+					</div>
+					{{/each}}
+	
 					</div>
 					<div class="row">
-						<div class="col-xs-1"> </div>
-						<div class="col-xs-4">
-							<a type="button" class="btn btn-link btn-lg" href="/index">
-								<span class="glyphicon glyphicon-chevron-left"></span>
-								<span>Back</span>
-							</a>
-						</div>
-						<div class="col-xs-6">
-							<i class="fa fa-check-square lower" aria-hidden="true" style="font-size: 3em;"></i>
-							<input type="submit" id="submitBtn" class="btn btn-link btn-lg submitbtn" value="Confirm Difficulty">
-						</div>
+						
+							<span class="glyphicon glyphicon-chevron-left"></span>
+							<input type="submit" id="submitBtn" class="btn btn-link btn-lg submitbtn" value="Back">
 					</div>
 	  		</form>
 			</div>

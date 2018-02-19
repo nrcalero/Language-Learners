@@ -16,6 +16,7 @@ var difficulty = require('./routes/difficulty');
 var login = require('./routes/login');
 var interestsdata = require('./routes/interestsdata');
 var storydata = require('./routes/storydata');
+var difficultydata = require('./routes/difficultydata');
 var changeinterest = require('./routes/changeinterest');
 var changedifficulty = require('./routes/changedifficulty');
 var register = require('./routes/register');
@@ -57,6 +58,7 @@ app.get('/storydata', storydata.view);
 app.get('/index', index.view);
 app.get('/changeinterest', changeinterest.changeInterests);
 app.get('/changedifficulty', changedifficulty.changeDifficulty);
+app.get('/difficultydata', difficultydata.view);
 
 // Example route
 // app.get('/users', user.list);

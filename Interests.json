@@ -27,7 +27,7 @@
     {
       "name": "Health & Fitness",
       "icon": "fa fa-heartbeat",
-      "enabled": null,
+      "enabled": "checked",
       "id": "healthfitness"
     },
     {

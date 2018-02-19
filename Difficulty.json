@@ -2,20 +2,20 @@
   "Difficulty": [
     {
       "name": "Easy",
-      "Description": "Four to six words will be changed to your chosen language in the stories you read.",
+      "Description": "Up to 6 words will be changed to Spanish in your story.",
       "enabled": "checked",
       "btntype": "btn-info"
     },
     {
       "name": "Medium",
-      "Description": "Eight to ten words will be changed to your chosen language in the stories you read.",
-      "enabled": null,
+      "Description": "Up to 12 words will be changed to Spanish in your story.",
+      "enabled": "checked",
       "btntype": "btn-warning"
     },
     {
       "name": "Hard",
-      "Description": "Eleven to thirteen words will be changed to your chosen language in the stories you read.",
-      "enabled": null,
+      "Description": "More than 12 words will be changed to Spanish in your story.",
+      "enabled": "checked",
       "btntype": "btn-danger"
     }
   ]

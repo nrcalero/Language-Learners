@@ -1,45 +1,41 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/materialize.css">
+	<script src="js/jquery-1.11.0.js"></script>
+	<script src="js/materialize.js"></script>
+	<script src="js/materialize.min.js"></script>
+
+	<script src="js/index.js"></script>
 	<title>Language Learners</title>
 </head>
 <body>
-	<div class="container-fluid text-center">
+	<div class="container text-center">
 		<h1>Language Learners</h1>
-		<div class="container grid">
 			<div class="row top_row">
-				<div class="col-xs-6">
-					<a type="button" class="btn btn-link btn-lg" href="/interests">
+				<div class="carousel">
+					<a type="button" class="carousel-item btn-lg" href="/interests">
 						<span class="icon glyphicon glyphicon-thumbs-up"></span>
 						<p>Interests</p>
 					</a>
-				</div>
-				<div class="col-xs-6">
-					<a type="button" class="btn btn-link btn-lg" href="/storyboards">
+					<a type="button" class=" carousel-item btn-lg" href="/storyboards">
 						<span class="icon glyphicon glyphicon-book"></span>
 						<p>Storyboards</p>
 					</a>
-				</div>
-			</div>
-			<div class="row bottom_row">
-				<div class="col-xs-6">
-					<a type="button" class="btn btn-link btn-lg" href="/words">
+					<a type="button" class=" carousel-item btn-lg" href="/words">
 						<span class="icon glyphicon glyphicon-search"></span>
 						<p>Words</p>
 					</a>
-				</div>
-				<div class="col-xs-6">
-					<a type="button" class="btn btn-link btn-lg" href="/difficulty">
+					<a type="button" class="btn-lg carousel-item" href="/difficulty">
 						<span class="icon glyphicon glyphicon-signal"></span>
 						<p>Difficulty</p>
 					</a>
 				</div>
 			</div>
-		</div>
-		<a type="button" class="btn btn-link btn-lg" href="/">
+		<a type="button" class=" btn-lg" href="/">
 			<p>Logout</p>
 		</button>
 	</div>

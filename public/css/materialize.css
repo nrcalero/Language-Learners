@@ -5060,6 +5060,24 @@ small {
   transition: color .28s ease;
 }
 
+.tabs .tab input {
+  color: rgba(238, 110, 115, 0.7);
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0 24px;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-transition: color .28s ease;
+  transition: color .28s ease;
+}
+
+.tabs .tab input:hover, .tabs .tab a.active {
+  background-color: transparent;
+  color: #ee6e73;
+}
+
 .tabs .tab a:hover, .tabs .tab a.active {
   background-color: transparent;
   color: #ee6e73;
@@ -6675,7 +6693,8 @@ textarea.materialize-textarea.validate + label:not(.label-icon).active {
 /* CUSTOM CSS CHECKBOXES */
 form p {
   margin-bottom: 10px;
-  text-align: left;
+  margin-top: -0.5%;
+  text-align: center;
 }
 
 form p:last-child {

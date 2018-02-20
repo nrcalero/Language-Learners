@@ -1,40 +1,43 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/interests.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/materialize.css">
 	<script src="js/jquery-1.11.0.js"></script>
-	<script src="js/bootstrap.js"></script>
 	<script src="js/interests.js"></script>
+	<script src="js/materialize.js"></script>
 	<title>Language Learners</title>
 </head>
 <body>
 	<div class="container">
 		<h1>Interests</h1>
     <p>Choose your interests to change what stories are displayed to you!</p>
-		<div class="container-fluid text-center grid">
+    		<form id="changeInterestForm" role="form" method="get" action="/changeinterest">
+    			<div class="container">
 			<div class="row topmargin">
-				<form id="changeInterestForm" role="form" method="get" action="/changeinterest">
 					{{#each Interests}}
-					<div class="col-xs-4 form-group">
+					<div class="col s4 form-group" style="text-align:center;">
 						<i class="{{icon}}" style="font-size: 6em;"></i>
-						<p>{{name}}</p>
-						<label class="switch" for="{{id}}">
+						<p class="centered">{{name}}</p>
+						<label class="switchcustom" for="{{id}}">
  					 		<input type="checkbox" id="{{id}}" class="form-control" name="{{id}}" {{enabled}}>
-  						<span class="slider round"></span>
+  						<span class="slidercustom roundcustom"></span>
 						</label>
 					</div>
 					{{/each}}
 				</div>
 				<div class="row">
-					<span class="glyphicon glyphicon-chevron-left"></span>
-					<input type="submit" id="submitBtn" class="btn btn-link btn-lg" value="Homepage">
+					<div class="col s4"></div>
+					<div class="col s4" style="text-align: center; width:100%;">
+					<input type="submit" id="submitBtn" class="btn" style="background-color: #EE6E73;" value="Homepage">
+				</div>
+				<div class="col s4"> </div>
+		</div>
 				</div>
 			 	</form>
-			</div>
-		</div>
+			 </div>
 	</div>
 </body>
 </html>

@@ -20,7 +20,7 @@ function initializePage() {
   var interest = document.getElementById('interests').value;
   $('#text').empty();
   $('#text').append('<p><em><strong>Word list: </strong></em></p>');
-
+  $('.story').scrollTop(0);
   if (interest == 'sports') {
     while (true) {
       if (usedstories.sports[index % usedstories.sports.length].difficulty == "easy" && difficulties[0] == true) break;

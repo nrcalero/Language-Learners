@@ -10,14 +10,14 @@
     {
       "name": "Medium",
       "Description": "Up to 12 words will be changed to Spanish in your story.",
-      "enabled": "checked",
+      "enabled": null,
       "btntype": "btn-warning",
       "number": "2"
     },
     {
       "name": "Hard",
       "Description": "More than 12 words will be changed to Spanish in your story.",
-      "enabled": "checked",
+      "enabled": null,
       "btntype": "btn-danger",
       "number": "3"
     }

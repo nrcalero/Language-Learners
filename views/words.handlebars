@@ -2,27 +2,33 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<link rel="stylesheet" href="css/materialize.css">
 	<script src="js/words.js" charset="utf-8"></script>
+	<script src="js/materialize.js"></script>
 	<title>Language Learners</title>
 </head>
 <body>
-	<div class="container">
+	<div class="container ">
 		<h1>Words</h1>
     <p>Here is the complete list of words that you have learned.</p>
 		<form class="form-inline">
-			<input class="form-control mr-sm-2" onkeyup="changeWords()" type="search"
+			<div class="container">
+			<input class=" col form-control s12" onkeyup="changeWords()" type="search"
 			placeholder="Search for a Spanish word..." aria-label="Search" id="wordSearch">
+		</div>
 		</form>
 		<div id="words" class="container vocab">
 			{{#each words}}
 			<p id={{word}}><strong>{{word}}:</strong> {{meaning}}</p>
 			{{/each}}
 		</div>
-		<a type="button" class="btn btn-link btn-lg" href="/index">
-			<span class="glyphicon glyphicon-chevron-left"></span>
-			<span>Homepage</span>
+	</div>
+	<div class="container text-center" style="margin-top:6px;">
+			<a type="button" class="btn btn-link btn-lg" href="/index" style="background-color: #EE6E73;" >
+			<p style="color:white;" >Homepage</p>
 		</a>
 	</div>
 </body>

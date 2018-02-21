@@ -33,7 +33,7 @@
     {
       "name": "Technology",
       "icon": "fa fa-laptop",
-      "enabled": "checked",
+      "enabled": null,
       "id": "technology"
     }
   ]

@@ -1,10 +1,13 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/difficulty.css">
+		<link rel="stylesheet" href="css/materialize.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="js/jquery-1.11.0.js"></script>
+		<script src="js/materialize.js"></script>
+		<script src="js/difficulty.js"></script>
 
 		<title>Language Learners</title>
 	</head>
@@ -12,28 +15,39 @@
 		<div class="container">
 			<h1>Difficulty</h1>
 	    <p>Pick one (or more) difficulties! If you left all difficulties not chosen, the default will be 'Easy'.</p>
-			<div class="container-fluid text-center grid">
-				<form id="changeDifficultyForm" role="form" method="get" action="/changedifficulty">
-					<div class="row">
+	    	<form id="changeDifficultyForm" role="form" method="get" action="/changedifficulty">
+			<div class="container text-center">
+				
+					<div class="row top-margined">
 						{{#each Difficulty}}
-						<div class="col-xs-4 form-group">
-						<h2>{{name}}</h2>
-						<p>{{Description}}</p>
-						<label class="switch" for="{{name}}">
- 					 		<input type="checkbox" id="{{name}}" class="form-control" name="{{name}}" {{enabled}}>
-  						<span class="slider round"></span>
-						</label>
+						<div class="col s4 form-group section" style="text-align:center;"">
+							<a class="waves-effect waves-light btn modal-trigger " href="#modal{{number}}" style="width:100%;margin-bottom:10%; background-color: #EE6E73"> <span style="color:white;" id="{{name}}2" >{{name}}</span></a>
+							<label class="switchcustom" for="{{name}}">
+ 					 			<input type="checkbox" id="{{name}}" class="form-control" name="{{name}}" {{enabled}}>
+  								<span class="slidercustom roundcustom"></span>
+							</label>
+							
+						</div>
+						<div id="modal{{number}}" class="modal" style="background-color: #4DB6AC; color:white;">
+    						<div class="modal-content">
+      							<h4>{{name}}</h4>
+      							<p style="color: white;">{{Description}}</p>
+    						</div>
+    						<div class="modal-footer" style="background-color: #4DB6AC; color:white;">
+      							<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat" style="color: white;">Okay!</a>
+    						</div>
+  						</div>
+						{{/each}}
 					</div>
-					{{/each}}
-	
+					<div class="row"> 
+						<div class="col s4"></div>
+						<div class="col s4" style="text-align:center; width:100%;">
+							<input type="submit" id="submitBtn" class="btn" style="background-color: #EE6E73; color:white;" value="Homepage">
+						</div>
 					</div>
-					<div class="row">
-						
-							<span class="glyphicon glyphicon-chevron-left"></span>
-							<input type="submit" id="submitBtn" class="btn btn-link btn-lg submitbtn" value="Homepage">
-					</div>
-	  		</form>
 			</div>
+
+	  		</form>
 		</div>
 	</body>
 </html>

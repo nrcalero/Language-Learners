@@ -4,7 +4,7 @@ function init() {
 }
 
 $(document).ready(function () {
-  initializePage();
+  $('.modal').modal();
   $('.switch #sports:checkbox').on("change", function () {
     var data = $.getJSON("interestsdata", function (mydata) {
           if (mydata.Interests[0].enabled == null) {

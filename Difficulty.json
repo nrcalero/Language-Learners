@@ -4,19 +4,22 @@
       "name": "Easy",
       "Description": "Up to 6 words will be changed to Spanish in your story.",
       "enabled": "checked",
-      "btntype": "btn-info"
+      "btntype": "btn-info",
+      "number": "1"
     },
     {
       "name": "Medium",
       "Description": "Up to 12 words will be changed to Spanish in your story.",
-      "enabled": null,
-      "btntype": "btn-warning"
+      "enabled": "checked",
+      "btntype": "btn-warning",
+      "number": "2"
     },
     {
       "name": "Hard",
       "Description": "More than 12 words will be changed to Spanish in your story.",
       "enabled": "checked",
-      "btntype": "btn-danger"
+      "btntype": "btn-danger",
+      "number": "3"
     }
   ]
 }

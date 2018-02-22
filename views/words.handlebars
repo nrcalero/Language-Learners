@@ -15,15 +15,15 @@
 		<h1>Words</h1>
     <p>Here is the complete list of words that you have learned.</p>
 		<form class="form-inline">
-			<div class="container">
 			<input class=" col form-control s12" onkeyup="changeWords()" type="search"
 			placeholder="Search for a Spanish word..." aria-label="Search" id="wordSearch">
-		</div>
 		</form>
-		<div id="words" class="container vocab">
-			{{#each words}}
-			<p id={{word}}><strong>{{word}}:</strong> {{meaning}}</p>
-			{{/each}}
+		<div class="container vocab">
+			<ul class="collection" id="words">
+				{{#each words}}
+				<li class="collection-item" id={{word}}><strong>{{word}}:</strong> {{meaning}}</li>
+				{{/each}}
+			</ul>
 		</div>
 	</div>
 	<div class="container text-center" style="margin-top:6px;">

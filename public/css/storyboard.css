@@ -37,6 +37,8 @@
 .story {
     overflow-y: scroll;
     height: 375px;
+    text-align: justify;
+    padding: 0px 10px;
 }
 
 .lowerbutton {
@@ -53,4 +55,3 @@
 #titlestrong {
     text-align: center;
 }
-

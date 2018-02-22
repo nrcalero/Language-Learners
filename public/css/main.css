@@ -54,7 +54,6 @@ p,span {
 }
 
 .vocab {
-  width: auto;
   height: 55%;
   overflow-y: scroll;
 }

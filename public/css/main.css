@@ -59,14 +59,7 @@ p,span {
 }
 
 #login {
-  background-color: black;
-  border-style: none;
-}
-
-#register {
-  background-color: white;
-  border-color: black;
-  color: black;
+  background-color: #EE6E73;
 }
 
 #interests {
@@ -75,24 +68,7 @@ p,span {
   width: auto;
 }
 
-.login-box {
-  max-width: 350px;
-  max-height: 350px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
-  padding: 20px;
-  border-style: solid;
-  border-width: medium;
-  border-color: black;
-  border-radius: 15px;
-  color: black;
-}
-
-.register-box {
+.form-box {
   max-width: 350px;
   max-height: 400px;
   position: absolute;
@@ -102,11 +78,15 @@ p,span {
   left: 0;
   margin: auto;
   padding: 20px;
-  border-style: solid;
-  border-width: medium;
-  border-color: black;
-  border-radius: 15px;
-  color: black;
+}
+
+[type="checkbox"].filled-in:checked+label:after {
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #EE6E73;
+    background-color: #EE6E73;
+    z-index: 0;
 }
 
 @media (max-width: 767px) {

@@ -5119,9 +5119,9 @@ small {
   padding: 10px 8px;
   font-size: 1rem;
   z-index: 2000;
-  background-color: transparent;
+  background-color: white;
   border-radius: 2px;
-  color: #fff;
+  color: white;
   min-height: 36px;
   line-height: 120%;
   opacity: 0;
@@ -5135,13 +5135,17 @@ small {
   visibility: hidden;
 }
 
+.material-tooltip span {
+  color: white;
+}
+
 .backdrop {
   position: absolute;
   opacity: 0;
   height: 7px;
   width: 14px;
   border-radius: 0 0 50% 50%;
-  background-color: #323232;
+  background-color: #EE6E73;
   z-index: -1;
   -webkit-transform-origin: 50% 0%;
           transform-origin: 50% 0%;

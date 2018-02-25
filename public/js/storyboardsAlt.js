@@ -7,6 +7,7 @@ function init() {
 var index = 0;
 
 $(document).ready(function () {
+  $('.tooltipped').tooltip({delay:0});
   initializePage();
   var index = 1;
 });
@@ -16,6 +17,11 @@ function initializePage() {
   var usedstories = makeUsedStories();
   var difficulties = setupDifficulty();
   ++index;
+
+$('p strong').click( function() {
+  console.log("WHATEVER");
+
+});
 
   var interest = document.getElementById('interests').value;
   $('#text').empty();
@@ -28,7 +34,7 @@ function initializePage() {
       if (usedstories.sports[index % usedstories.sports.length].difficulty == "hard" && difficulties[2] == true) break;
       ++index;
     }
-    $('.story p').text(usedstories.sports[index % usedstories.sports.length].body);
+    $('.story p').html(usedstories.sports[index % usedstories.sports.length].Altbody);
     usedstories.sports[index % usedstories.sports.length].read = "true";
     $('#titlestrong').text(usedstories.sports[index % usedstories.sports.length].title);
     Object.keys(usedstories.sports[index % usedstories.sports.length].words[0]).forEach(function (key) {
@@ -43,7 +49,7 @@ function initializePage() {
       if (usedstories.fooddrink[index % usedstories.fooddrink.length].difficulty == "hard" && difficulties[2] == true) break;
       ++index;
     }
-    $('.story p').text(usedstories.fooddrink[index % usedstories.fooddrink.length].body);
+    $('.story p').html(usedstories.fooddrink[index % usedstories.fooddrink.length].Altbody);
     $('#titlestrong').text(usedstories.fooddrink[index % usedstories.fooddrink.length].title);
     Object.keys(usedstories.fooddrink[index % usedstories.fooddrink.length].words[0]).forEach(function (key) {
       $('#text').append('<p>' + key + ' : ' + usedstories.fooddrink[index % usedstories.fooddrink.length].words[0][key] + '</p>');
@@ -57,7 +63,7 @@ function initializePage() {
       if (usedstories.news[index % usedstories.news.length].difficulty == "hard" && difficulties[2] == true) break;
       ++index;
     }
-    $('.story p').text(usedstories.news[index % usedstories.news.length].body);
+    $('.story p').html(usedstories.news[index % usedstories.news.length].Altbody);
     $('#titlestrong').text(usedstories.news[index % usedstories.news.length].title);
     Object.keys(usedstories.news[index % usedstories.news.length].words[0]).forEach(function (key) {
       $('#text').append('<p>' + key + ' : ' + usedstories.news[index % usedstories.news.length].words[0][key] + '</p>');
@@ -71,7 +77,7 @@ function initializePage() {
       if (usedstories.music[index % usedstories.music.length].difficulty == "hard" && difficulties[2] == true) break;
       ++index;
     }
-    $('.story p').text(usedstories.music[index % usedstories.music.length].body);
+    $('.story p').html(usedstories.music[index % usedstories.music.length].Altbody);
     $('#titlestrong').text(usedstories.music[index % usedstories.music.length].title);
     Object.keys(usedstories.music[index % usedstories.music.length].words[0]).forEach(function (key) {
       $('#text').append('<p>' + key + ' : ' + usedstories.music[index % usedstories.music.length].words[0][key] + '</p>');
@@ -85,7 +91,7 @@ function initializePage() {
       if (usedstories.healthfitness[index % usedstories.healthfitness.length].difficulty == "hard" && difficulties[2] == true) break;
       ++index;
     }
-    $('.story p').text(usedstories.healthfitness[index % usedstories.healthfitness.length].body);
+    $('.story p').html(usedstories.healthfitness[index % usedstories.healthfitness.length].Altbody);
     $('#titlestrong').text(usedstories.healthfitness[index % usedstories.healthfitness.length].title);
     Object.keys(usedstories.healthfitness[index % usedstories.healthfitness.length].words[0]).forEach(function (key) {
       $('#text').append('<p>' + key + ' : ' + usedstories.healthfitness[index % usedstories.healthfitness.length].words[0][key] + '</p>');
@@ -99,12 +105,14 @@ function initializePage() {
       if (usedstories.technology[index % usedstories.technology.length].difficulty == "hard" && difficulties[2] == true) break;
       ++index;
     }
-    $('.story p').text(usedstories.technology[index % usedstories.technology.length].body);
+    $('.story p').html(usedstories.technology[index % usedstories.technology.length].Altbody);
     $('#titlestrong').text(usedstories.technology[index % usedstories.technology.length].title);
     Object.keys(usedstories.technology[index % usedstories.technology.length].words[0]).forEach(function(key) {
       $('#text').append('<p>' + key + ' : ' + usedstories.technology[index % usedstories.technology.length].words[0][key] + '</p>');
     });
   }
+    $('.tooltipped').tooltip({delay:0});
+
 }
 
 function makeUsedStories() {
@@ -182,3 +190,6 @@ function setupDifficulty() {
   else difficulties[2] = false;
   return difficulties;
 }
+
+function analyticsFunc() {}
+

@@ -3,13 +3,13 @@
     {
       "name": "Sports",
       "icon": "fa fa-futbol-o",
-      "enabled": null,
+      "enabled": "checked",
       "id": "sports"
     },
     {
       "name": "Food & Drink",
       "icon": "fa fa-coffee",
-      "enabled": null,
+      "enabled": "checked",
       "id": "fooddrink"
     },
     {

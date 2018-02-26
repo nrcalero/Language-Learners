@@ -37,7 +37,7 @@
 
 .story {
     overflow-y: scroll;
-    height: 375px;
+    height: 350px;
     text-align: justify;
     padding: 0px 10px;
 }

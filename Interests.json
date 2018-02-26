@@ -36,5 +36,6 @@
       "enabled": "checked",
       "id": "technology"
     }
-  ]
+  ],
+  "viewAlt": false
 }

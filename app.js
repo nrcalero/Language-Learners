@@ -20,7 +20,7 @@ var difficultydata = require('./routes/difficultydata');
 var changeinterest = require('./routes/changeinterest');
 var changedifficulty = require('./routes/changedifficulty');
 var register = require('./routes/register');
-var storyboardsAlt = require('./routes/storyboardsAlt')
+var storyboardsAlt = require('./routes/storyboardsAlt');
 
 // Example route
 // var user = require('./routes/user');
@@ -60,7 +60,8 @@ app.get('/index', index.view);
 app.get('/changeinterest', changeinterest.changeInterests);
 app.get('/changedifficulty', changedifficulty.changeDifficulty);
 app.get('/difficultydata', difficultydata.view);
-app.get('/storyboardsAlt', storyboardsAlt.view);
+app.get('/storyboardsAlt', storyboards.viewAlt);
+app.get('/indexAlt', index.viewAlt);
 
 // Example route
 // app.get('/users', user.list);

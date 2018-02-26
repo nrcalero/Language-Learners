@@ -5,8 +5,10 @@ function init() {
 }
 
 var index = 0;
+var initial = 0;
 
 $(document).ready(function () {
+  initial = new Date().getTime();
   $('.tooltipped').tooltip({delay:0});
   initializePage();
   var index = 1;
@@ -18,10 +20,6 @@ function initializePage() {
   var difficulties = setupDifficulty();
   ++index;
 
-$('p strong').click( function() {
-  console.log("WHATEVER");
-
-});
 
   var interest = document.getElementById('interests').value;
   $('#text').empty();
@@ -191,5 +189,15 @@ function setupDifficulty() {
   return difficulties;
 }
 
-function analyticsFunc() {}
 
+function analyticsFunc () {
+  ga('send','event','singleword','click');
+}
+
+function clickNext() {
+  var final = new Date().getTime();
+    var time = (final - initial) / 1000;
+  console.log((final - initial) / 1000);
+  initial = new Date().getTime();
+  initializePage();
+}

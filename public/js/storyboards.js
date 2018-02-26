@@ -5,13 +5,17 @@ function init() {
 }
 
 var index = 0;
+var initial = new Date().getTime();
 
 $(document).ready(function () {
+  initial = new Date().getTime();
+
   initializePage();
   var index = 1;
 });
 
 function initializePage() {
+  initial = new Date().getTime();
   event.preventDefault();
   var usedstories = makeUsedStories();
   var difficulties = setupDifficulty();
@@ -163,6 +167,8 @@ function getDifficultyData() {
 
 function on() {
   event.preventDefault();
+    ga('send','event','wordlist','click');
+
   //document.getElementById('overlay').style.display = 'block';
   $('#overlay').fadeIn();
 }
@@ -181,4 +187,11 @@ function setupDifficulty() {
   if (difficulty.Difficulty[2].enabled == "checked") difficulties[2] = true;
   else difficulties[2] = false;
   return difficulties;
+}
+
+function clickNext() {
+  var final = new Date().getTime();
+  var time = (final - initial) / 1000;
+  initial = new Date().getTime();
+  initializePage();
 }

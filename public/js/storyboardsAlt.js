@@ -191,7 +191,7 @@ function setupDifficulty() {
 
 
 function analyticsFunc () {
-  ga('send','event','singleword','click');
+  ga('send','event','wordlist','click');
 }
 
 function clickNext() {

@@ -14,15 +14,15 @@
 <body>
 	<div class="container ">
 		<h1>Words</h1>
-    <p>Here is the complete list of words that you have learned.</p>
+    <p>Here is the complete list of words you may come across in your stories.</p>
 		<form class="form-inline">
 			<input class=" col form-control s12" onkeyup="changeWords()" type="search"
-			placeholder="Search for a Spanish word..." aria-label="Search" id="wordSearch">
+			placeholder="Search for an English or Spanish word..." aria-label="Search" id="wordSearch">
 		</form>
 		<div class="container vocab">
 			<ul class="collection" id="words">
 				{{#each words}}
-				<li class="collection-item" id={{word}}><strong>{{word}}:</strong> {{meaning}}</li>
+				<li class="collection-item"><strong>{{word}}:</strong> {{meaning}}</li>
 				{{/each}}
 			</ul>
 		</div>

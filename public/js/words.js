@@ -8,9 +8,9 @@ function changeWords() {
   var words = document.getElementById('words').getElementsByTagName('li');
 
   for (var w in words) {
-    var id = words[w].id.toUpperCase();
+    var content = words[w].textContent.toUpperCase();
 
-    if (id.indexOf(input) > -1) {
+    if (content.indexOf(input) > -1) {
       words[w].style.display = '';
     } else {
       words[w].style.display = 'none';

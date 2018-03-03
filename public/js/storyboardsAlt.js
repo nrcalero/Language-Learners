@@ -196,8 +196,15 @@ function analyticsFunc () {
 
 function clickNext() {
   var final = new Date().getTime();
-    var time = (final - initial) / 1000;
-  console.log((final - initial) / 1000);
+  var time = (final - initial);
+  console.log((final - initial));
+  ga('send','timing',{ 
+    'timingCategory' : 'Finished story A',
+    'timingVar' : 'read',
+    'timingValue' : time
+  });
+  ga('send','event','next','click');
+
   initial = new Date().getTime();
   initializePage();
 }

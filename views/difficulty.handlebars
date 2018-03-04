@@ -9,7 +9,7 @@
 		<script src="js/materialize.js"></script>
 		<script src="js/difficulty.js"></script>
 
-		<title>Language Learners</title>
+		<title>Spanglish</title>
 	</head>
 	<body>
 		<div class="container">
@@ -17,7 +17,7 @@
 	    <p>Pick one (or more) difficulties! If you left all difficulties not chosen, the default will be 'Easy'.</p>
 	    	<form id="changeDifficultyForm" role="form" method="get" action="/changedifficulty">
 			<div class="container text-center">
-				
+
 					<div class="row top-margined">
 						{{#each Difficulty}}
 						<div class="col s4 form-group section" style="text-align:center;"">
@@ -26,7 +26,7 @@
  					 			<input type="checkbox" id="{{name}}" class="form-control" name="{{name}}" {{enabled}}>
   								<span class="slidercustom roundcustom"></span>
 							</label>
-							
+
 						</div>
 						<div id="modal{{number}}" class="modal" style="background-color: #4DB6AC; color:white;">
     						<div class="modal-content">
@@ -39,7 +39,7 @@
   						</div>
 						{{/each}}
 					</div>
-					<div class="row"> 
+					<div class="row">
 						<div class="col s4"></div>
 						<div class="col s4" style="text-align:center; width:100%;">
 							<input type="submit" id="submitBtn" class="btn" style="background-color: #EE6E73; color:white;" value="Homepage">

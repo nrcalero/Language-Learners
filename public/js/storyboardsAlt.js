@@ -195,7 +195,7 @@ function analyticsFunc () {
 }
 
 function clickNext() {
-  var final = new Date().getTime();
+  /* var final = new Date().getTime();
   var time = (final - initial);
   console.log((final - initial));
   ga('send','timing',{ 
@@ -205,6 +205,6 @@ function clickNext() {
   });
   ga('send','event','next','click');
 
-  initial = new Date().getTime();
+  initial = new Date().getTime(); */
   initializePage();
 }

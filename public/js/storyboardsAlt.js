@@ -199,7 +199,7 @@ function clickNext() {
   var time = (final - initial);
   console.log((final - initial));
   ga('send','timing',{ 
-    'timingCategory' : 'Experiment A',
+    'timingCategory' : 'Experiment B',
     'timingVar' : 'read',
     'timingValue' : time
   });

@@ -33,10 +33,6 @@ img + p {
   overflow-y: scroll;
 }
 
-.topmargin {
-  margin-top: 10px;
-}
-
 #login {
   background-color: #EE6E73;
 }
@@ -49,7 +45,7 @@ img + p {
 
 .form-box {
   max-width: 350px;
-  max-height: 400px;
+  max-height: 440px;
   position: absolute;
   top: 0;
   bottom: 0;

@@ -15,7 +15,7 @@
     {
       "name": "News",
       "icon": "fa fa-newspaper-o",
-      "enabled": "checked",
+      "enabled": null,
       "id": "news"
     },
     {

@@ -7,7 +7,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(43,187,173,0.95);
+    background-color: #4DB6AC;
     z-index: 2;
     cursor: pointer;
     overflow-y: scroll;

@@ -1,33 +1,40 @@
-/* Page Header */
+/* Page Headers */
 h1 {
   font-family: 'Crimson Text', serif;
   font-size:  5em;
 }
 
-/* Info boxes and buttons */
+/* Button Labels */
 p {
   font-family: 'Lato', serif;
   font-size: 1em;
-  color: #EE6E73;
 }
 
 img + p {
   margin-top: 10px;
+  color: #EE6E73;
 }
 
+/* Header Logo */
 .logo {
   margin: 30px 0px;
 }
 
+/* Story Page text */
 .story {
   border-style: solid;
   text-align: center;
   height: 60%;
 }
 
+/* Words */
 .vocab {
   height: 55%;
   overflow-y: scroll;
+}
+
+.topmargin {
+  margin-top: 10px;
 }
 
 #login {

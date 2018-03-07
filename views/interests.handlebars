@@ -1,52 +1,54 @@
 <html>
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/interests.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/materialize.css">
-	<script src="js/jquery-1.11.0.js"></script>
-	<script src="js/interests.js"></script>
-	<script src="js/materialize.js"></script>
-	<title>Spanglish</title>
-</head>
-<body>
-	<div class="container">
-		<h1>Interests</h1>
-    <p>Choose your interests to change what stories are displayed to you!</p>
-    		<form id="changeInterestForm" role="form" method="get" action="/changeinterest">
-    			<div class="container">
-			<div class="row topmargin">
-					{{#each Interests}}
-					<div class="col s4 form-group" style="text-align:center;">
-						<i class="{{icon}}" style="font-size: 6em;"></i>
-						<p class="centered">{{name}}</p>
-						<label class="switchcustom" for="{{id}}">
- 					 		<input type="checkbox" id="{{id}}" class="form-control" name="{{id}}" {{enabled}}>
-  						<span class="slidercustom roundcustom"></span>
-						</label>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+		<link rel="stylesheet" href="css/materialize.css">
+		<link rel="stylesheet" href="css/interests.css">
+		<link rel="stylesheet" href="css/main.css">
+		<script src="js/jquery-1.11.0.js"></script>
+		<script src="js/materialize.js"></script>
+		<script src="js/interests.js"></script>
+		<title>Spanglish</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Interests</h1>
+	    <p>
+				Customize your interests! Each toggle changes the stories available
+				for you to read!
+			</p>
+	    <form id="changeInterestForm" role="form" method="get" action="/changeinterest">
+	    	<div class="container">
+					<div class="row topmargin">
+						{{#each Interests}}
+						<div class="col s4 form-group" style="text-align:center; margin-top: 15px;">
+							<i class="{{icon}}" style="font-size: 6em;"></i>
+							<p class="text-center">{{name}}</p>
+							<label class="switchcustom" for="{{id}}">
+	 					 		<input type="checkbox" id="{{id}}" class="form-control" name="{{id}}" {{enabled}}>
+	  						<span class="slidercustom roundcustom"></span>
+							</label>
+						</div>
+						{{/each}}
 					</div>
-					{{/each}}
+					<div class="row">
+						<div class="col s12" style="text-align: center; width: 100%;">
+							<input type="submit" id="submitBtn" class="btn" style="background-color: #EE6E73;" value="Homepage">
+						</div>
+					</div>
 				</div>
-				<div class="row">
-					<div class="col s4"></div>
-					<div class="col s4" style="text-align: center; width:100%;">
-					<input type="submit" id="submitBtn" class="btn" style="background-color: #EE6E73;" value="Homepage">
-				</div>
-				<div class="col s4"> </div>
+			</form>
 		</div>
-				</div>
-			 	</form>
-			 </div>
-	</div>
-	<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-114658330-1', 'auto');
-ga('send', 'pageview');
-</script>
-</body>
+			ga('create', 'UA-114658330-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</body>
 </html>

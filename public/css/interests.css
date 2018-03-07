@@ -53,33 +53,3 @@ input:checked + .slidercustom:before {
 .slidercustom.roundcustom:before {
   border-radius: 50%;
 }
-
-.midtoggle {
-  margin-top: -2.5%;
-  margin-bottom: 3%;
-}
-
-.fa {
-  font-size: 6em;
-  text-align: center;
-}
-
-.lower {
-  margin-top: 2%;
-}
-
-.topmargin {
-  margin-top: 10%;
-}
-
-
-
-.backbtn {
-  margin-top: 0%;
-}
-
-form p .centered {
-  text-align: center;
-}
-
-

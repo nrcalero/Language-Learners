@@ -3,7 +3,7 @@
     {
       "name": "Sports",
       "icon": "fa fa-futbol-o",
-      "enabled": null,
+      "enabled": "checked",
       "id": "sports"
     },
     {
@@ -21,13 +21,13 @@
     {
       "name": "Music",
       "icon": "fa fa-music",
-      "enabled": "checked",
+      "enabled": null,
       "id": "music"
     },
     {
       "name": "Health",
       "icon": "fa fa-heartbeat",
-      "enabled": null,
+      "enabled": "checked",
       "id": "healthfitness"
     },
     {
@@ -37,5 +37,5 @@
       "id": "technology"
     }
   ],
-  "viewAlt": true
+  "viewAlt": false
 }

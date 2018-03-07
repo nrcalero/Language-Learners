@@ -43,6 +43,10 @@ img + p {
   width: auto;
 }
 
+.margined {
+  margin-top: 130px;
+}
+
 .form-box {
   max-width: 350px;
   max-height: 440px;

@@ -1,5 +1,3 @@
-
-
 .switchcustom {
   position: relative;
   display: inline-block;
@@ -55,25 +53,3 @@ input:checked + .slidercustom:before {
 .slidercustom.roundcustom:before {
   border-radius: 50%;
 }
-
-#submitBtn {
-  color: black;
-  box-sizing: border-box;
-  margin-bottom: 1%;
-}
-
-.top-margined {
-  margin-top: 150px;
-}
-
- @media (max-width: 400px) {
-  #Medium2 {
-  margin-left: -40%; 
-}
-#Hard2 {
-  margin-left: -10%;
-}
-} 
-
-
-

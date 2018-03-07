@@ -7,7 +7,6 @@ $(document).ready(function () {
   initializePage();
   $('.switch #sports:checkbox').on('change', function () {
     var data = $.getJSON('interestsdata', function (mydata) {
-      console.log(mydata.Interests[0]);
       if (mydata.Interests[0].enabled == null) {
         mydata.Interests[0].enabled = 'checked';
       } else {
@@ -30,25 +29,21 @@ $(document).ready(function () {
 
   $('.switch #music:checkbox').on('change', function () {
     var data = $.getJSON('interestsdata', function (mydata) {
-      console.log(mydata.Interests[3]);
     });
   });
 
   $('.switch #healthfitness:checkbox').on('change', function () {
     var data = $.getJSON('interestsdata', function (mydata) {
-      console.log(mydata.Interests[4]);
     });
   });
 
   $('.switch #technology:checkbox').on('change', function () {
     var data = $.getJSON('interestsdata', function (mydata) {
-      console.log(mydata.Interests[5]);
     });
   });
 });
 
 function initializePage() {
-  console.log('Javascript connected!');
 }
 
 function changeInterest() {

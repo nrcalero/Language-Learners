@@ -3,7 +3,7 @@
     {
       "name": "Easy",
       "Description": "Up to 6 words will be changed to Spanish in your story.",
-      "enabled": "checked",
+      "enabled": null,
       "btntype": "btn-info",
       "number": "1"
     },

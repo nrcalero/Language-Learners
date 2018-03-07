@@ -11,16 +11,15 @@
 		<script src="js/materialize.js"></script>
 		<title>Spanglish</title>
 	</head>
-	<body>
+	<body  style="background-color: #e0F2f1;">
 		<div class="container">
 			<h1>Words</h1>
-	    <p>Here is the complete list of words you may come across during your reading.</p>
 			<form class="form-inline">
 				<input class=" col form-control s12" onkeyup="changeWords()" type="search"
 				placeholder="Search for an English or Spanish word..." aria-label="Search" id="wordSearch">
 			</form>
-			<div class="row vocab">
-				<ul class="collection" id="words">
+			<div class="row vocab" >
+				<ul class="collection" id="words" style="background-color: #EE6E73;">
 					{{#each words}}
 					<li class="collection-item"><strong>{{word}}:</strong> {{meaning}}</li>
 					{{/each}}
@@ -32,14 +31,5 @@
 				<p style="color:white;">Homepage</p>
 			</a>
 		</div>
-		<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-			ga('create', 'UA-114658330-1', 'auto');
-			ga('send', 'pageview');
-		</script>
 	</body>
 </html>

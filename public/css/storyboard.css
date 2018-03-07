@@ -29,12 +29,6 @@
     width:100%;
 }
 
-.storytitle  {
-    font-size: 1.25em;
-    margin-bottom: -30px;
-    text-align: center;
-}
-
 .story {
     overflow-y: scroll;
     height: 350px;
@@ -51,11 +45,6 @@
     width: 100%;
     text-align: center;
     margin-top: 3%;
-}
-
-#titlestrong {
-    text-align: center;
-    margin-bottom: -50%;
 }
 
 .touchword {

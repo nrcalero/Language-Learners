@@ -5,21 +5,21 @@ function init() {
 }
 
 var index = 0;
-var initial = 0;
+var initial = new Date().getTime();
 
 $(document).ready(function () {
   initial = new Date().getTime();
-  $('.tooltipped').tooltip({delay:0});
+
   initializePage();
   var index = 1;
 });
 
 function initializePage() {
+  initial = new Date().getTime();
   event.preventDefault();
   var usedstories = makeUsedStories();
   var difficulties = setupDifficulty();
   ++index;
-
 
   var interest = document.getElementById('interests').value;
   $('#text').empty();
@@ -32,7 +32,7 @@ function initializePage() {
       if (usedstories.sports[index % usedstories.sports.length].difficulty == "hard" && difficulties[2] == true) break;
       ++index;
     }
-    $('.story p').html(usedstories.sports[index % usedstories.sports.length].Altbody);
+    $('.story p').text(usedstories.sports[index % usedstories.sports.length].body);
     usedstories.sports[index % usedstories.sports.length].read = "true";
     $('#titlestrong').text(usedstories.sports[index % usedstories.sports.length].title);
     Object.keys(usedstories.sports[index % usedstories.sports.length].words[0]).forEach(function (key) {
@@ -47,7 +47,7 @@ function initializePage() {
       if (usedstories.fooddrink[index % usedstories.fooddrink.length].difficulty == "hard" && difficulties[2] == true) break;
       ++index;
     }
-    $('.story p').html(usedstories.fooddrink[index % usedstories.fooddrink.length].Altbody);
+    $('.story p').text(usedstories.fooddrink[index % usedstories.fooddrink.length].body);
     $('#titlestrong').text(usedstories.fooddrink[index % usedstories.fooddrink.length].title);
     Object.keys(usedstories.fooddrink[index % usedstories.fooddrink.length].words[0]).forEach(function (key) {
       $('#text').append('<p>' + key + ' : ' + usedstories.fooddrink[index % usedstories.fooddrink.length].words[0][key] + '</p>');
@@ -61,7 +61,7 @@ function initializePage() {
       if (usedstories.news[index % usedstories.news.length].difficulty == "hard" && difficulties[2] == true) break;
       ++index;
     }
-    $('.story p').html(usedstories.news[index % usedstories.news.length].Altbody);
+    $('.story p').text(usedstories.news[index % usedstories.news.length].body);
     $('#titlestrong').text(usedstories.news[index % usedstories.news.length].title);
     Object.keys(usedstories.news[index % usedstories.news.length].words[0]).forEach(function (key) {
       $('#text').append('<p>' + key + ' : ' + usedstories.news[index % usedstories.news.length].words[0][key] + '</p>');
@@ -75,7 +75,7 @@ function initializePage() {
       if (usedstories.music[index % usedstories.music.length].difficulty == "hard" && difficulties[2] == true) break;
       ++index;
     }
-    $('.story p').html(usedstories.music[index % usedstories.music.length].Altbody);
+    $('.story p').text(usedstories.music[index % usedstories.music.length].body);
     $('#titlestrong').text(usedstories.music[index % usedstories.music.length].title);
     Object.keys(usedstories.music[index % usedstories.music.length].words[0]).forEach(function (key) {
       $('#text').append('<p>' + key + ' : ' + usedstories.music[index % usedstories.music.length].words[0][key] + '</p>');
@@ -89,7 +89,7 @@ function initializePage() {
       if (usedstories.healthfitness[index % usedstories.healthfitness.length].difficulty == "hard" && difficulties[2] == true) break;
       ++index;
     }
-    $('.story p').html(usedstories.healthfitness[index % usedstories.healthfitness.length].Altbody);
+    $('.story p').text(usedstories.healthfitness[index % usedstories.healthfitness.length].body);
     $('#titlestrong').text(usedstories.healthfitness[index % usedstories.healthfitness.length].title);
     Object.keys(usedstories.healthfitness[index % usedstories.healthfitness.length].words[0]).forEach(function (key) {
       $('#text').append('<p>' + key + ' : ' + usedstories.healthfitness[index % usedstories.healthfitness.length].words[0][key] + '</p>');
@@ -103,14 +103,12 @@ function initializePage() {
       if (usedstories.technology[index % usedstories.technology.length].difficulty == "hard" && difficulties[2] == true) break;
       ++index;
     }
-    $('.story p').html(usedstories.technology[index % usedstories.technology.length].Altbody);
+    $('.story p').text(usedstories.technology[index % usedstories.technology.length].body);
     $('#titlestrong').text(usedstories.technology[index % usedstories.technology.length].title);
     Object.keys(usedstories.technology[index % usedstories.technology.length].words[0]).forEach(function(key) {
       $('#text').append('<p>' + key + ' : ' + usedstories.technology[index % usedstories.technology.length].words[0][key] + '</p>');
     });
   }
-    $('.tooltipped').tooltip({delay:0});
-
 }
 
 function makeUsedStories() {
@@ -169,6 +167,8 @@ function getDifficultyData() {
 
 function on() {
   event.preventDefault();
+    ga('send','event','wordlist','click');
+
   //document.getElementById('overlay').style.display = 'block';
   $('#overlay').fadeIn();
 }
@@ -189,17 +189,12 @@ function setupDifficulty() {
   return difficulties;
 }
 
-
-function analyticsFunc () {
-  ga('send','event','wordlist','click');
-}
-
 function clickNext() {
   /* var final = new Date().getTime();
   var time = (final - initial);
   console.log((final - initial));
   ga('send','timing',{ 
-    'timingCategory' : 'Experiment B',
+    'timingCategory' : 'Experiment A',
     'timingVar' : 'read',
     'timingValue' : time
   });

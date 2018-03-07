@@ -2,25 +2,26 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/storyboard.css">
 		<link rel="stylesheet" href="css/materialize.css">
 		<script src="js/jquery-1.11.0.js"></script>
 		<script src="js/bootstrap.js"></script>
-		<script src="js/storyboards.js"></script>
 		<script src="js/materialize.js"></script>
-
+		<script src="js/storyboards.js"></script>
 		<title>Spanglish</title>
 	</head>
 	<body>
-		<div class="container">
+		<div class="container text-center">
 			<h1>Stories</h1>
 			<p>
 				Choose an interest you specified and read up!
-				Try figuring out what the word means from context,
-				and you can always navigate to the word list for help.
+				Try figuring out what the word means from its context.
+				You can always navigate to the word list for help.
 			</p>
-			<div class="container">
+			<div class="container text-center">
 				<div id="overlay" onclick="off()">
 					<div id="text">
 					</div>
@@ -38,37 +39,33 @@
 					</div>
 				</div>
  				<div class="row" id="titlediv">
- 					<div class="col s11 m9 offset-m2 offset-s1">
-					<p><em><strong class="storytitle" id="titlestrong"></strong></em></p>
+ 					<div class="col s12">
+						<p><em><strong id="titlestrong"></strong></em></p>
 					</div>
 				</div>
-				<div class="row">
-					<div class="container story">
-						<p>This is where the text will go. The text will consist of a story that relates to the topic of interest chosen above.</p>
-					</div>
+				<div class="row story">
+					<p>This is where the text will go. The text will consist of a story that relates to the topic of interest chosen above.</p>
 				</div>
 				<div class="row">
-					<div class="col s12">
-						<ul class="tabs">
-							<li class="tab col s5 m4" onclick="location.href='/index'"><a> Homepage </a></li>
-							<li class="tab col s5 m4" id="next" onclick="clickNext()"><a href="#">
-							Next Story </a></li>
-							<li class="tab col s5 m4 popup" onclick="on()"><a href="#"> Word List </a></li>
-						</ul>
+					<div class="col s6 m6">
+							<a href='/indexAlt' class='btn' style="background-color: #EE6E73; width:100%;">Homepage</a>
+						</div>
+						<div class="col s6 m6">
+							<a id="next" class='btn' id="next" style="background-color: #EE6E73; width:100%;" href="#" onclick="clickNext()">Next Story</a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114658330-1"></script>
-
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114602440-1"></script>
 		<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-114658330-1', 'auto');
-ga('send', 'pageview');
-</script>
+			ga('create', 'UA-114658330-1', 'auto');
+			ga('send', 'pageview');
+		</script>
 	</body>
 </html>

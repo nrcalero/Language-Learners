@@ -53,3 +53,26 @@ input:checked + .slidercustom:before {
 .slidercustom.roundcustom:before {
   border-radius: 50%;
 }
+
+#switchh {
+  margin-top: -20px; 
+  margin-bottom: 15px;
+}
+
+@media(max-width: 400px) {
+  #switchh {
+    margin-top: -10px; 
+    margin-bottom: 25px;
+}
+
+}
+
+#end {
+  margin-top: -20px;
+}
+
+#divdiv {
+  margin-top: -1px;
+}
+
+
